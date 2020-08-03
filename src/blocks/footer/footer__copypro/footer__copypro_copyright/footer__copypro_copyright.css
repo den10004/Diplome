@@ -1,0 +1,54 @@
+.footer__copypro_copyright {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+color: #B6BCBF;
+margin-left: 104px;
+margin-top: 33px;
+margin-bottom: 22px;
+text-decoration: none;
+width: 105px;
+height: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer__copypro_copyright {
+  margin-left: 40px;
+  
+  }
+}
+
+  
+  @media screen and (max-width: 768px) {
+    .footer__copypro_copyright {
+    margin-left: 40px;
+    
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .footer__copypro_copyright {
+      margin-left: 16px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    
+    }
+  }
+  
+  @media screen and (max-width: 375px) {
+    .footer__copypro_copyright {
+      margin-left: 16px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .footer__copypro_copyright {
+      margin-left: 16px;
+    
+    }
+  }

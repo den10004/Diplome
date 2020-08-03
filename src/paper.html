@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NewsAnalyzer</title>
+
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+</head>
+
+<body>
+    <div class="page">
+
+        <header class="header">
+            <div class="header__newsAnalyzer newsAnalyzer_clients">NewsAnalyzer</div>
+            <div class="header__menu">
+                <a class="header__menu_main menu_main_clients" href="./index.html">Главная</a>
+                <a class="header__menu_about menu_about_clients" href="./clients.html">О проекте</a>
+            </div>
+            <hr id="header-line" style="border: 1px solid #E5E5E5">
+        </header>
+
+
+        <section class="question">
+            <div class="question__header">
+                <a class="question__header_major" href="./index.html">Главная /</a>
+                <a class="question__header_analytics">Аналитика</a>
+            </div>
+
+
+            <div class="question__headline">
+                <div class="question__headline_main">
+                    <h2 class="question__headline_main_ask">Вы спросили:&nbsp</h2>
+                    <h2 class="question__headline_main_answer">«Путешествия»</h2>
+                </div>
+
+
+
+                <div class="question__analysis">
+                    <div class="question__analysis_news">
+                        <h2 class="question__analysis_news_week">Новостей за неделю:&nbsp </h2>
+                        <h2 class="question__analysis_news_answerweek">34 324</h2>
+                    </div>
+                    <div class="question__analysis_news">
+                        <h2 class="question__analysis_news_week">Упоминаний в загaловках:&nbsp </h2>
+                        <h2 class="question__analysis_news_answerweek">235</h2>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+        <section class="analytics">
+            <div class="analytics__block">
+                <h1 class="analytics__block-heading">Аналитика по дням</h1>
+
+                <div class="analytics__block-diagram">
+                    <div class="analytics__diagram">
+                        <div class="analytics__diagram-data">Дата<br> (август)</div>
+                        <div class="analytics__diagram-reference">Кол-во упоминаний</div>
+                    </div>
+                    <hr id="analytics-line">
+                    <div class="analytics__diagram-percent">
+                        <div class="analytics__diagram-digits">0</div>
+                        <div class="analytics__diagram-digits">25</div>
+                        <div class="analytics__diagram-digits">50</div>
+                        <div class="analytics__diagram-digits">75</div>
+                        <div class="analytics__diagram-digits">100</div>
+                    </div>
+
+
+                    <div class="analytics__diagram-column">
+                        <div class="analytics__column-cell">
+                            <div class="analytics__column-days">19, ПН</div>
+                            <div class="analytics__column-histogram" style="width:10%">15</div>
+
+                            <div class="analytics__column-days">20, ВТ</div>
+                            <div class="analytics__column-histogram" style="width:18%">18</div>
+
+                            <div class="analytics__column-days">21, СР</div>
+                            <div class="analytics__column-histogram" style="width:11%">11</div>
+
+                            <div class="analytics__column-days">22, ЧТ</div>
+                            <div class="analytics__column-histogram" style="width:39%">39</div>
+
+                            <div class="analytics__column-days">23, ПТ</div>
+                            <div class="analytics__column-histogram" style="width:45%">45</div>
+
+                            <div class="analytics__column-days">24, СБ</div>
+                            <div class="analytics__column-histogram" style="width:73%">73</div>
+
+                            <div class="analytics__column-days">25, ВС</div>
+                            <div class="analytics__column-histogram" style="width:34%">34</div>
+                        </div>
+
+
+
+                        <div class="analytics__diagram-percent">
+                            <div class="analytics__diagram-digits">0</div>
+                            <div class="analytics__diagram-digits">25</div>
+                            <div class="analytics__diagram-digits">50</div>
+                            <div class="analytics__diagram-digits">75</div>
+                            <div class="analytics__diagram-digits">100</div>
+                        </div>
+                    </div>
+
+        </section>
+
+
+
+
+        <footer class="footer">
+            <div class="footer__copypro">
+                <ul class="footer__copypro_project">
+                    <li><a class="footer__copypro_project_main" href="./index.html">Главная</a></li>
+                    <li><a class="footer__copypro_project_about" href="./clients.html">О проекте</a></li>
+                    <li><a class="footer__copypro_project_yandex"
+                            href="https://praktikum.yandex.ru">Яндекс.Практикум</a></li>
+                </ul>
+                <a class="footer__copypro_copyright" href="https://vk.com/den10004">&copy 2020 Денис</a>
+            </div>
+            <ul class="footer__links">
+                <li><a class="footer__links_github" href="https://github.com/den10004?tab=repositories"><img
+                            src="<%=require('./images/github.png')%>"></a></li>
+                <li><a class="footer__links_facebook" href="https://vk.com/den10004"><img
+                            src="<%=require('./images/facebook.png')%>"></a>
+                </li>
+
+            </ul>
+
+        </footer>
+    </div>
+
+
+
+
+
+    <script src=" <%= htmlWebpackPlugin.files.js %>"></script>
+
+
+</body>
+
+</html>

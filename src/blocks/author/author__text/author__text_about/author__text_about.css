@@ -1,0 +1,18 @@
+.author__text_about {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+    color: #1A1B22;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 1024px) {
+    .author__text_about {
+        font-style: 'regular';  
+        font-size: 30px;
+    }
+  }
+  

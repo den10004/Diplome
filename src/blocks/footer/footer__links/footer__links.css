@@ -1,0 +1,50 @@
+@import url(./footer__links_github/footer__links_github.css);
+@import url(./footer__links_facebook/footer__links_facebook.css);
+
+.footer__links {
+   display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-left: 380px;
+   padding: 0px;
+    margin-top: 30px;   
+}
+
+@media screen and (max-width: 1280px) {
+  .footer__links {
+    margin-left: 210px;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .footer__links {
+    margin-left: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer__links {
+    margin-left: 53px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+  .footer__links {
+    margin-top: 0px;
+    margin-left: 150px;
+    }
+}
+  
+@media screen and (max-width: 375px) {
+  .footer__links {
+   margin-left: 83px;
+   margin-left: 105px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer__links {
+    margin-left: 45px; 
+  }
+}

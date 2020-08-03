@@ -1,0 +1,7 @@
+@import url(./main-text-name/main-text-name.css);
+@import url(./main-text-email/main-text-email.css);
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+  }

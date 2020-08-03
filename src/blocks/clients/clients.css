@@ -1,0 +1,26 @@
+@import url(../clients/clients__main/clients__main.css);
+@import url(../clients/clients__text/clients__text.css);
+
+
+.clients {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-left: 104px;
+    max-width: 815px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .clients{
+        margin-left: 40px;
+        max-width: 688px;
+        }
+      }
+
+@media screen and (max-width: 425px) {
+    .clients{
+     margin-left: 16px;
+    max-width: calc(100% - 32px);
+    }
+}

@@ -1,0 +1,11 @@
+@import url(./preloader__search_circle/preloader__search_circle.css);
+@import url(./preloader__search_news/preloader__search_news.css);
+
+.preloader__search {
+	display: none;
+/*	display: flex;*/
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}

@@ -1,0 +1,41 @@
+.search__form_input {
+    position: absolute;
+    background: #FFFFFF;
+     box-sizing: border-box;
+     border: 2px solid white;
+    backdrop-filter: blur(8px);
+    border-radius: 100px 0 0 100px;
+    z-index: 0;
+    height: 64px;
+    width: 440px;
+    left: 0px;
+ 
+  
+}
+
+.search__form_input:hover {
+  background: wheat;
+};
+
+
+
+@media screen and (max-width: 1024px) {
+    .search__form_input {
+      width: 440px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .search__form_input {
+      width: 292px;
+      height: 56px;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    .search__form_input {
+      border-radius: 100px;
+      height: 56px;
+      width: 288px;
+    }
+  }

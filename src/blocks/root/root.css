@@ -1,0 +1,33 @@
+@import url(../header/header.css);
+@import url(../search/search.css);
+
+
+.root {
+margin: 0 auto;
+background-image: url(../../images/georgia.png);
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .root  {
+    background-image: url(../../images/georgia768.png);   
+     }
+   }
+   @media screen and (max-width: 425px) {
+    .root  {
+      background-image: url(../../images/georgia320.png);   
+       }
+     }
+  
+
+
+
+
+@media screen and (max-width: 320px) {
+ .root  {
+    height: 536px;
+    }
+  }

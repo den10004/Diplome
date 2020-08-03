@@ -1,0 +1,21 @@
+.preloader__result_button {
+	align-items: center;
+	text-align: center;
+	font-family: 'Roboto' Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+	box-sizing: border-box;
+	border: 0px;
+    backdrop-filter: blur(8px);
+	border-radius: 80px;
+	height: 64px;
+	width: 288px;
+	background: #FFFFFF;
+	margin-bottom: 80px;
+	margin-top: 64px;
+	cursor: pointer;
+	justify-content: center;
+}
+

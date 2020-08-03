@@ -1,0 +1,49 @@
+@import url(./preloader__result_resultblocs_resultsearch/preloader__result_resultblocs_resultsearch.css);
+@import url(./preloader__result_resultblocs_analitics/preloader__result_resultblocs_analitics.css);
+
+
+.preloader__result_resultblocs {
+	margin-top: 80px;
+	width: 1232px;
+	display: flex;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 1280px) {
+	.preloader__result_resultblocs  {
+		width: 1072px;
+	}	
+}
+
+@media screen and (max-width: 1024px) {
+	.preloader__result_resultblocs  {
+		width: 944px;
+	}	
+}
+
+@media screen and (max-width: 768px) {
+	.preloader__result_resultblocs  {
+		width: 688px;
+	}	
+}
+
+
+@media screen and (max-width: 425px) {
+	.preloader__result_resultblocs  {
+		flex-direction: column;
+		margin-top: 32px;
+		width: 393px;
+	}	
+}
+
+@media screen and (max-width: 375px) {
+	.preloader__result_resultblocs  {
+		width: 343px;
+	}	
+}
+
+@media screen and (max-width: 320px) {
+	.preloader__result_resultblocs  {
+		width: 288px;
+	}	
+}

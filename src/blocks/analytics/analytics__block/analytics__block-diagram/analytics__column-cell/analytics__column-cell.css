@@ -1,0 +1,48 @@
+@import url(./analytics__column-days/analytics__column-days.css);
+@import url(./analytics__column-histogram/analytics__column-histogram.css);
+
+
+.analytics__column-cell {
+    display: grid;
+    grid-template-columns: 60px 1128px;
+    grid-template-rows: repeat(1, 1fr);
+    grid-row-gap: 56px; 
+    grid-column-gap: 45px;
+    margin-top: 8px; 
+}
+
+@media screen and (max-width: 1280px) {
+    .analytics__column-cell {	
+        grid-template-columns: 60px 968px;
+    }
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .analytics__column-cell {	
+        grid-template-columns: 60px 584px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .analytics__column-cell {	
+        grid-template-columns: 60px 295px;
+        grid-row-gap: 24px; 
+        grid-column-gap: 30px; 
+        margin-top: 18px;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .analytics__column-cell {	
+        grid-template-columns: 60px 245px;
+        grid-row-gap: 24px; 
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .analytics__column-cell {	
+        grid-template-columns: 60px 190px;
+        grid-row-gap: 24px; 
+    }
+  }

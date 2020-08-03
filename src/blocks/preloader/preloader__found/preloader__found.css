@@ -1,0 +1,27 @@
+@import url(./preloader__found_image/preloader__found_image.css);
+@import url(./preloader__found_nothing/preloader__found_nothing.css);
+@import url(./preloader__found_sorry/preloader__found_sorry.css);
+
+
+
+.preloader__found {
+    /*display: flex;*/
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 375px) {
+    .preloader__found {
+		max-width: calc(100% - 6px)
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .preloader__found {
+		max-width: calc(100% - 6px)
+    }
+  }

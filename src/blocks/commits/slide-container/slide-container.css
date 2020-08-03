@@ -1,0 +1,16 @@
+@import url(./button.css);
+@import url(./slide-content/slide-content.css);
+
+
+
+.slide-container {
+    margin-top: 64px;
+    width: 100%;
+ }
+
+ @media screen and (max-width: 768px) {
+    .slide-container {	
+        margin-top: 23px;
+
+     }
+   }

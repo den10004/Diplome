@@ -1,0 +1,41 @@
+@import url(./preloader__cards-content-header.css);
+@import url(./preloader__cards-content-text.css);
+
+
+.preloader__cards-content {
+display: flex;
+flex-direction: column;
+font-family: 'Roboto', Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+color: #1A1B22;
+width: 352px;
+height: 194px;
+margin-top: 12px;
+background: #FFFFFF;
+
+}
+
+@media screen and (max-width: 1024px) {
+  .preloader__cards-content {
+    max-width: 192px;
+    max-height: 170px; 		
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .preloader__cards-content {
+        max-width: 192px;
+        max-height: 170px; 		
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .preloader__cards-content {
+        max-width: 256px;
+        max-height: 150px;
+     	
+    }
+  }

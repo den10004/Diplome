@@ -1,0 +1,14 @@
+@import url(../analytics__diagram/analytics__diagram-data/analytics__diagram-data.css);
+@import url(../analytics__diagram/analytics__diagram-reference/analytics__diagram-reference.css);
+
+.analytics__diagram {
+    display: flex;
+    flex-direction: row;
+    margin-top: 48px;
+}
+
+@media screen and (max-width: 425px) {
+    .analytics__diagram {	
+        margin-top: 32px;
+    }
+  }

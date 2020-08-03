@@ -1,0 +1,29 @@
+@import url(../analytics__block/analytics__block-heading/analytics__block-heading.css);
+@import url(../analytics__block/analytics__block-diagram/analytics__block-diagram.css);
+@import url(../analytics__block/analytics__block-diagram/analytics-line/analytics-line.css);
+@import url(../analytics__block/analytics__block-diagram/analytics__diagram-percent/analytics__diagram-percent.css);
+@import url(../analytics__block/analytics__block-diagram/analytics__column-cell/analytics__column-cell.css);
+
+.analytics__block {
+    width: calc(100% - 208px);
+}
+@media screen and (max-width: 1024px) {
+    .analytics__block {
+        width: calc(100% - 80px);
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .analytics__block {
+        width: calc(100% - 32px);
+    }
+  }
+
+
+/*
+.analytics__diagram-column {
+   margin-bottom: 56px;   
+}
+
+
+*/

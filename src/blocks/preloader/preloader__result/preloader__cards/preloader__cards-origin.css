@@ -1,0 +1,38 @@
+.preloader__cards-origin {
+font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0.4px;
+text-transform: uppercase;
+color: #B6BCBF;
+text-align: left;
+margin-top: 18px;
+margin-bottom: 24px;
+width: 352px;
+background: #FFFFFF;
+}
+
+@media screen and (max-width: 1024px) {
+    .preloader__cards-origin  {
+      max-width: 192px;
+      margin-top: 12px;	
+      margin-bottom: 16px;
+    }
+  }
+
+
+@media screen and (max-width: 768px) {
+    .preloader__cards-origin  {
+        max-width: 192px;
+        margin-top: 12px;	
+        margin-bottom: 16px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .preloader__cards-origin {
+      max-width: 256px;	
+    }
+  }

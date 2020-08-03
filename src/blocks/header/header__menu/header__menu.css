@@ -1,0 +1,60 @@
+@import url(./header__menu_main/header__menu_main.css);
+@import url(./header__menu_about/header__menu_about.css);
+
+.header__menu {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 1336px;
+    color: #FFFFFF;
+    margin-bottom: 26px;
+}
+
+
+@media screen and (max-width: 1280px) {
+  .header__menu {
+    margin-left: 747px;
+    margin-bottom: 26px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+    .header__menu {
+      margin-left: 500px;      
+    }
+  }
+ 
+  @media screen and (max-width: 768px) {
+    .header__menu {
+      margin-top: 16px;
+      margin-left: 370px;
+      margin-bottom: 18px;  
+    }
+  }
+  
+
+  
+  @media screen and (max-width: 425px) {
+    .header__menu {
+        margin-left: 120px;
+        margin-bottom: 18px;  
+    }
+  }
+  
+
+  @media screen and (max-width: 375px) {
+    .header__menu {
+        margin-top: 16px;
+        margin-left: 70px;
+        margin-bottom: 16px;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .header__menu {
+        margin-top: 16px;
+        margin-left: 15px;
+        margin-bottom: 16px;
+    }
+  }

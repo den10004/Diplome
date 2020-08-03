@@ -1,0 +1,15 @@
+@import url(./preloader__search/preloader__search.css);
+@import url(./preloader__found/preloader__found.css);
+@import url(./preloader__result/preloader__result.css);
+
+
+.preloader {
+display: flex;
+flex-direction: column;
+max-width: 100%;
+background: #F5F6F7;
+overflow: hidden;
+justify-content: center;
+align-items: center
+}
+

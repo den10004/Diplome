@@ -36,4 +36,4 @@ CSS3, HTML5, Webpack
 - Разместить production-билд на github pages - `npm run deploy`
 
 ## Ссылка на github pages:
-https://den10004.github.io/diplome
+https://den10004.github.io/Diplome

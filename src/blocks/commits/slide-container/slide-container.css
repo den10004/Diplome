@@ -4,13 +4,14 @@
 
 
 .slide-container {
+   position: relative;
     margin-top: 64px;
     width: 100%;
  }
 
  @media screen and (max-width: 768px) {
     .slide-container {	
-        margin-top: 23px;
+      margin-top: 23px;
 
      }
    }

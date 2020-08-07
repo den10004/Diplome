@@ -1,53 +1,28 @@
+
 #button-right {
     position: absolute;
-    right: 1800px;
+    right: 10px;
     z-index: 3;
-    top: 2010px;
+    top: 110px;
  }
  
- #button-left {
-   position: absolute;
-   z-index: 3;
-    right: 5px;
-    top: 2010px;
-   
- }
- @media screen and (max-width: 1280px) {
-   #button-right {	
-      top: 2020px;
-      right: 1200px;
-    }
-  }
-
-  @media screen and (max-width: 1280px) {
-   #button-left {	
-      top: 2020px;
-   
-    }
-  }
-
-
-
-  @media screen and (max-width: 1024px) {
-   #button-right {	
-      top: 1950px;
-      right: 950px;
-    }
-  }
-
-  @media screen and (max-width: 1024px) {
-   #button-left {	
-      top: 1950px;
-
-    }
-  }
-
   @media screen and (max-width: 768px) {
-   #button-right {	
-     display: none;
-    }
+    #button-right {	
+      display: none;
+     }
+   }
+
+
+
+
+  #button-left {
+    position: absolute;
+    z-index: 3;
+    left: 10px;
+     top: 110px;
   }
 
+ 
   @media screen and (max-width: 768px) {
    #button-left {	
     display: none;

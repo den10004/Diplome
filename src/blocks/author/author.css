@@ -23,12 +23,12 @@
     }
   }
 
-
   .author__content {
     display: flex;
     flex-direction: row;
     width: calc(100% - 208px);
     margin-top: 80px;
+    margin-bottom: 80px;
   }
 
   @media screen and (max-width: 1024px) {
@@ -41,6 +41,7 @@
   @media screen and (max-width: 768px) {
     .author__content {
       margin-top: 32px;
+      margin-bottom: 40px;
 
     }
   }
@@ -66,5 +67,6 @@
   @media screen and (max-width: 425px) {
     .author__content {
       width: calc(100% - 48px);
+      margin-bottom: 32px;
     }
   }

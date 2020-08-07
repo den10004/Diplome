@@ -1,11 +1,10 @@
-@import url(./preloader__found_image/preloader__found_image.css);
-@import url(./preloader__found_nothing/preloader__found_nothing.css);
-@import url(./preloader__found_sorry/preloader__found_sorry.css);
+@import url(./preloader__found-image/preloader__found-image.css);
+@import url(./preloader__found-nothing/preloader__found-nothing.css);
+@import url(./preloader__found-sorry/preloader__found-sorry.css);
 
 
 
 .preloader__found {
-    /*display: flex;*/
     display: none;
     flex-direction: column;
     justify-content: center;

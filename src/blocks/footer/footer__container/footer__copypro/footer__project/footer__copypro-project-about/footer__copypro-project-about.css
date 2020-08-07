@@ -1,0 +1,32 @@
+
+ .footer__copypro-project-about {
+  font-family: 'Source Sans Pro' Arial, Helvetica, sans-serif;
+  font-style: 'Regular';
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #1A1B22;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-decoration: none;
+  width: 84px;
+  }
+
+
+
+
+  @media screen and (max-width: 768px) {
+    .footer__copypro-project-about {
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .footer__copypro-project-about {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }

@@ -14,6 +14,15 @@ width: 352px;
 background: #FFFFFF;
 }
 
+@media screen and (max-width: 1280px) {
+  .preloader__cards-origin  {
+    max-width: 192px;
+    margin-top: 12px;	
+    margin-bottom: 16px;
+  }
+}
+
+
 @media screen and (max-width: 1024px) {
     .preloader__cards-origin  {
       max-width: 192px;
@@ -31,7 +40,7 @@ background: #FFFFFF;
     }
   }
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 718px) {
     .preloader__cards-origin {
       max-width: 256px;	
     }

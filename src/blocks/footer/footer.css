@@ -1,34 +1,19 @@
-@import url(./footer__copypro/footer__copypro.css);
-@import url(./footer__links/footer__links.css);
+@import url(./footer__container/footer__container.css);
 
 .footer {
 display: flex;
 flex-direction: row;
 background: #FFFFFF;
-width: 80px;
-/*text-align: center;
-align-items: center;
-justify-content: center;*/
+width: 100%;
+justify-content: center;
 }
+
+
 
 
 @media screen and (max-width: 425px) {
   .footer {
     flex-direction: row;
-    margin-top: 32px;
-    width: 425px;
-    }
-}
 
-
-
-@media screen and (max-width: 375px) {
-  .footer {
-  width: 375px;
-    }
-}
-  @media screen and (max-width: 320px) {
-    .footer {
-    width: 320px;
   }
 }

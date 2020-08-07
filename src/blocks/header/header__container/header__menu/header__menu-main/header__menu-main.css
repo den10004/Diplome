@@ -1,0 +1,45 @@
+
+.header__menu-main {
+  display: flex;    
+  font-family: 'Roboto' Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  margin-right: 34px;
+  color: #FFFFFF;
+  text-decoration: none;
+  }
+  
+
+  @media screen and (max-width: 425px) {
+    .header__menu-main {
+      font-size: 16px;
+      margin-right: 16px;
+    }
+  }
+  
+  .header__menu-main_clients {
+    display: flex;    
+    font-family: 'Roboto' Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    color: black;
+    margin-right: 34px;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 425px) {
+    .header__menu-main_clients {
+      font-size: 16px;
+      margin-right: 16px;
+    }
+  }
+      
+    

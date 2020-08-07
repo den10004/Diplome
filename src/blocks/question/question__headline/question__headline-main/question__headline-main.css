@@ -1,0 +1,23 @@
+@import url(./question__headline-main-ask/question__headline-main-ask.css);
+@import url(./question__headline-main-answer/question__headline-main-answer.css);
+
+.question__headline-main {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto Slab' Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 34px;
+    margin-top: 0px;
+
+}
+
+  @media screen and (max-width: 425px) {
+    .question__headline-main  {
+        flex-direction: column;
+    
+    
+    }
+  }
+  

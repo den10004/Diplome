@@ -1,0 +1,36 @@
+@import url(../technologies__icons/technologies__icons.css);
+  .technologies__blocks {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media screen and (max-width: 910px) {
+    .technologies__blocks {
+    margin-top: 40px;
+    justify-content: space-between;   
+    width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 616px) {
+  .technologies__blocks {
+  margin-top: 0px;
+   flex-wrap: wrap;
+  margin-left: 0px;
+  width: 350px;
+  justify-content: space-between;
+    }
+  }
+
+
+  @media screen and (max-width: 375px) {
+    .technologies__blocks {
+    width: 300px;        
+     }
+  }
+
+  @media screen and (max-width: 320px) {
+    .technologies__blocks {
+    width: 280px;        
+     }
+  }     

@@ -18,6 +18,13 @@ border-top: 10px;
 
 }
 
+@media screen and (max-width: 1280px) {
+  .preloader__cards {
+    max-width: 224px;
+    max-height: 420px; 	   
+      }
+    } 
+
 @media screen and (max-width: 1024px) {
     .preloader__cards {
       max-width: 224px;
@@ -32,7 +39,7 @@ border-top: 10px;
     }
   }
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 718px) {
     .preloader__cards {
         max-width: 288px;
         max-height: 446px; 		

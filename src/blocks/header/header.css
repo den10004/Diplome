@@ -1,25 +1,27 @@
-@import url(./header__newsAnalyzer/header__newsAnalyzer.css);
-@import url(./header__menu/header__menu.css);
+@import url(./header__container/header__container.css);
 
 .header {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
     height: 80px;
     position: relative;
- 
 }
 
+
+
 @media screen and (max-width: 768px) {
-    .header{
-    height: 64px;
-    }
+  .header{
+  height: 64px;
   }
+}
 
 @media screen and (max-width: 375px) {
-    .header{
-   height: 56px;
-    }
+  .header{
+ height: 56px;
   }
+}
+
 
 
   #header-line {

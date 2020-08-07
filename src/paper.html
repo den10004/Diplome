@@ -14,38 +14,41 @@
     <div class="page">
 
         <header class="header">
-            <div class="header__newsAnalyzer newsAnalyzer_clients">NewsAnalyzer</div>
-            <div class="header__menu">
-                <a class="header__menu_main menu_main_clients" href="./index.html">Главная</a>
-                <a class="header__menu_about menu_about_clients" href="./clients.html">О проекте</a>
+            <div class="header__container">
+                <div class="header__newsAnalyzer_clients">NewsAnalyzer</div>
+                <div class="header__menu">
+                    <a class="header__menu-main_clients" href="./index.html">Главная</a>
+                    <a class="header__menu-about_clients" href="./clients.html">О проекте</a>
+                </div>
             </div>
-            <hr id="header-line" style="border: 1px solid #E5E5E5">
+
+            <hr id="header-line" style="border: 1px solid rgba(255, 255, 255, 0.2)">
         </header>
 
 
         <section class="question">
             <div class="question__header">
-                <a class="question__header_major" href="./index.html">Главная /</a>
-                <a class="question__header_analytics">Аналитика</a>
+                <a class="question__header-major" href="./index.html">Главная /</a>
+                <a class="question__header-analytics">Аналитика</a>
             </div>
 
 
             <div class="question__headline">
-                <div class="question__headline_main">
-                    <h2 class="question__headline_main_ask">Вы спросили:&nbsp</h2>
-                    <h2 class="question__headline_main_answer">«Путешествия»</h2>
+                <div class="question__headline-main">
+                    <h2 class="question__headline-main-ask">Вы спросили:&nbsp</h2>
+                    <h2 class="question__headline-main-answer">«Путешествия»</h2>
                 </div>
 
 
 
                 <div class="question__analysis">
-                    <div class="question__analysis_news">
-                        <h2 class="question__analysis_news_week">Новостей за неделю:&nbsp </h2>
-                        <h2 class="question__analysis_news_answerweek">34 324</h2>
+                    <div class="question__analysis-news">
+                        <h2 class="question__analysis-news-week">Новостей за неделю:&nbsp </h2>
+                        <h2 class="question__analysis-news-answerweek">34 324</h2>
                     </div>
-                    <div class="question__analysis_news">
-                        <h2 class="question__analysis_news_week">Упоминаний в загaловках:&nbsp </h2>
-                        <h2 class="question__analysis_news_answerweek">235</h2>
+                    <div class="question__analysis-news">
+                        <h2 class="question__analysis-news-week">Упоминаний в загaловках:&nbsp </h2>
+                        <h2 class="question__analysis-news-answerweek">235</h2>
                     </div>
                 </div>
 
@@ -115,24 +118,24 @@
 
 
         <footer class="footer">
-            <div class="footer__copypro">
-                <ul class="footer__copypro_project">
-                    <li><a class="footer__copypro_project_main" href="./index.html">Главная</a></li>
-                    <li><a class="footer__copypro_project_about" href="./clients.html">О проекте</a></li>
-                    <li><a class="footer__copypro_project_yandex"
-                            href="https://praktikum.yandex.ru">Яндекс.Практикум</a></li>
+            <div class="footer__container">
+                <div class="footer__copypro">
+                    <ul class="footer__copypro-project">
+                        <li><a class="footer__copypro-project-main">Главная</a></li>
+                        <li><a class="footer__copypro-project-about" href="./clients.html">О проекте</a></li>
+                        <li><a class="footer__copypro-project-yandex"
+                                href="https://praktikum.yandex.ru">Яндекс.Практикум</a></li>
+                    </ul>
+                    <a class="footer__copypro-copyright" href="https://vk.com/den10004">&copy 2020 Денис</a>
+                </div>
+                <ul class="footer__links">
+                    <li><a class="footer__links-github" href="https://github.com/den10004?tab=repositories"><img
+                                src="<%=require('./images/github.png')%>"></a></li>
+                    <li><a class="footer__links-facebook" href="https://vk.com/den10004"><img
+                                src="<%=require('./images/facebook.png')%>"></a>
+                    </li>
                 </ul>
-                <a class="footer__copypro_copyright" href="https://vk.com/den10004">&copy 2020 Денис</a>
             </div>
-            <ul class="footer__links">
-                <li><a class="footer__links_github" href="https://github.com/den10004?tab=repositories"><img
-                            src="<%=require('./images/github.png')%>"></a></li>
-                <li><a class="footer__links_facebook" href="https://vk.com/den10004"><img
-                            src="<%=require('./images/facebook.png')%>"></a>
-                </li>
-
-            </ul>
-
         </footer>
     </div>
 

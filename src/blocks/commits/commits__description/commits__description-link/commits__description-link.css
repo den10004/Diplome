@@ -1,0 +1,26 @@
+.commits__description-link {
+font-family: 'Roboto' Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+align-items: center;
+text-align: right;
+color: #1A1B22;
+text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .commits__description-link {	
+      width: 150px;	
+  
+    }
+  }
+
+
+  @media screen and (max-width: 425px) {
+    .commits__description-link {		
+    display: none;
+    }
+  }
+

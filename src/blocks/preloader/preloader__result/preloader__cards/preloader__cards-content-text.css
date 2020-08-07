@@ -24,7 +24,7 @@ height: 110px;
   }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1280px) {
     .preloader__cards-content-text {		
         margin-top: 10px;
         height: 88px;

@@ -14,12 +14,15 @@
 
   <div class="page">
     <header class="header">
-      <div class="header__newsAnalyzer newsAnalyzer_clients">NewsAnalyzer</div>
-      <div class="header__menu">
-        <a class="header__menu_main menu_main_clients" href="./index.html">Главная</a>
-        <a class="header__menu_about menu_about_clients" href="#">О проекте</a>
+      <div class="header__container">
+        <div class="header__newsAnalyzer_clients">NewsAnalyzer</div>
+        <div class="header__menu">
+          <a class="header__menu-main_clients" href="./index.html">Главная</a>
+          <a class="header__menu-about_clients">О проекте</a>
+        </div>
       </div>
-      <hr id="header-line" style="border: 1px solid #E5E5E5">
+
+      <hr id="header-line" style="border: 1px solid rgba(255, 255, 255, 0.2)">
     </header>
 
 
@@ -50,31 +53,30 @@
 
 
     <section class="technologies">
-      <div class="technologies__used">Используемые технологии</div>
-      <div class="technologies__blocks">
-        <div class="technologies__icons">
-          <div class="technologies__icons_language">HTML</div>
-          <img class="technologies__icons_symbols" src="<%=require('./images/html.png')%>" alt="photo">
-        </div>
+      <div class="technologies__container">
+        <div class="technologies__used">Используемые технологии</div>
+        <div class="technologies__blocks">
+          <div class="technologies__icons">
+            <div class="technologies__icons-language">HTML</div>
+            <img class="technologies__icons-symbols" src="<%=require('./images/html.png')%>" alt="photo">
+          </div>
 
-        <div class="technologies__icons">
-          <div class="technologies__icons_language">CSS</div>
-          <img class="technologies__icons_symbols" src="<%=require('./images/css.png')%>" alt="photo">
-        </div>
+          <div class="technologies__icons">
+            <div class="technologies__icons-language">CSS</div>
+            <img class="technologies__icons-symbols" src="<%=require('./images/css.png')%>" alt="photo">
+          </div>
 
-        <div class="technologies__icons">
-          <div class="technologies__icons_language">Java Script</div>
-          <img class="technologies__icons_symbols" src="<%=require('./images/js.svg')%>" alt="photo">
-        </div>
+          <div class="technologies__icons">
+            <div class="technologies__icons-language">Java Script</div>
+            <img class="technologies__icons-symbols" src="<%=require('./images/js.svg')%>" alt="photo">
+          </div>
 
-        <div class="technologies__icons">
-          <div class="technologies__icons_language">Webpack</div>
-          <img class="technologies__icons_symbols" src="<%=require('./images/webpack.svg')%>" alt="photo">
+          <div class="technologies__icons">
+            <div class="technologies__icons-language">Webpack</div>
+            <img class="technologies__icons-symbols" src="<%=require('./images/webpack.svg')%>" alt="photo">
+          </div>
         </div>
-
       </div>
-
-
     </section>
 
 
@@ -82,8 +84,8 @@
       <div class="author__content">
         <img class="author__photo" src="<%=require('./images/author.png')%>" alt="photo">
         <div class="author__text">
-          <h2 class="author__text_about">Об авторе</h2>
-          <h4 class="author__text_main">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем
+          <h2 class="author__text-about">Об авторе</h2>
+          <h4 class="author__text-main">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем
             вы занимаетесь, какими технологиями разработки владеете.
             <br>Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь
             потенциальным заказчикам.
@@ -96,11 +98,9 @@
 
     <section class="commits">
       <div class="commits__description">
-        <div class="commits__description_history">История коммитов из GitHub </div>
-        <a class="commits__description_link" href="https://github.com/den10004?tab=repositories">Открыть в Github ></a>
+        <div class="commits__description-history">История коммитов из GitHub </div>
+        <a class="commits__description-link" href="https://github.com/den10004?tab=repositories">Открыть в Github></a>
       </div>
-
-
       <div class="slide-container">
         <img id="button-right" src="<%=require('./images/slider-control1.svg')%>">
         <img id="button-left" src="<%=require('./images/slider-control.svg')%>">
@@ -208,22 +208,23 @@
 
 
   <footer class="footer">
-    <div class="footer__copypro">
-      <ul class="footer__copypro_project">
-        <li><a class="footer__copypro_project_main" href="./index.html">Главная</a></li>
-        <li><a class="footer__copypro_project_about">О проекте</a></li>
-        <li><a class="footer__copypro_project_yandex" href="https://praktikum.yandex.ru">Яндекс.Практикум</a></li>
+    <div class="footer__container">
+      <div class="footer__copypro">
+        <ul class="footer__copypro-project">
+          <li><a class="footer__copypro-project-main">Главная</a></li>
+          <li><a class="footer__copypro-project-about" href="./clients.html">О проекте</a></li>
+          <li><a class="footer__copypro-project-yandex" href="https://praktikum.yandex.ru">Яндекс.Практикум</a></li>
+        </ul>
+        <a class="footer__copypro-copyright" href="https://vk.com/den10004">&copy 2020 Денис</a>
+      </div>
+      <ul class="footer__links">
+        <li><a class="footer__links-github" href="https://github.com/den10004?tab=repositories"><img
+              src="<%=require('./images/github.png')%>"></a></li>
+        <li><a class="footer__links-facebook" href="https://vk.com/den10004"><img
+              src="<%=require('./images/facebook.png')%>"></a>
+        </li>
       </ul>
-      <a class="footer__copypro_copyright" href="https://vk.com/den10004">&copy 2020 Денис</a>
     </div>
-    <ul class="footer__links">
-      <li><a class="footer__links_github" href="https://github.com/den10004?tab=repositories"><img
-            src="<%=require('./images/github.png')%>"></a></li>
-      <li><a class="footer__links_facebook" href="https://vk.com/den10004"><img
-            src="<%=require('./images/facebook.png')%>"></a>
-      </li>
-
-    </ul>
   </footer>
   </div>
 

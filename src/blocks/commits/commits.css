@@ -1,7 +1,6 @@
 @import url(./commits__description/commits__description.css);
 @import url(./commits__commentary/commits__commentary.css);
 @import url(./commits__button/commits__button.css);
-/*@import url(./slider/slider.css);*/
 @import url(./slide-container/slide-container.css);
 
 .commits {
@@ -34,3 +33,6 @@
  
      }
    }
+
+
+   

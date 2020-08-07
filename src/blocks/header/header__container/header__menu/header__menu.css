@@ -1,0 +1,9 @@
+@import url(./header__menu-about/header__menu-about.css);
+@import url(./header__menu-main/header__menu-main.css);
+
+.header__menu {
+  display: flex;
+    flex-direction: row;
+    color: #FFFFFF;
+ 
+}

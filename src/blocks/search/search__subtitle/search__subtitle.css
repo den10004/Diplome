@@ -29,13 +29,13 @@
     }
   }
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 514px) {
     .search__subtitle {
       margin-top: 16px;
      
     }
   }
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 450px) {
     .search__subtitle {
       margin-bottom: 64px;
       max-width: 288px;

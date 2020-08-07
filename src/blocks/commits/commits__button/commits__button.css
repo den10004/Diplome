@@ -1,9 +1,9 @@
 .commits__button {
-    display: flex;	 
+    display: flex;	
+
 }
 
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 426px) {
     .commits__button {	
         display: none;	
     }

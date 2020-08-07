@@ -1,5 +1,5 @@
-@import url(./question__header_major/question__header_major.css);
-@import url(./question__header_analytics/question__header_analytics.css);
+@import url(./question__header-major/question__header-major.css);
+@import url(./question__header-analytics/question__header-analytics.css);
 
 .question__header {
     display: flex;

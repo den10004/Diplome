@@ -10,15 +10,29 @@
     max-width: 815px;
 }
 
+@media screen and (max-width: 929px) {
+    .clients{
+        margin-left: 40px;
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .clients{
+        margin-left: 40px;
+        max-width: 650px;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     .clients{
         margin-left: 40px;
-        max-width: 688px;
-        }
-      }
+        max-width: calc(100% - 80px);
+    }
+}
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
     .clients{
      margin-left: 16px;
     max-width: calc(100% - 32px);

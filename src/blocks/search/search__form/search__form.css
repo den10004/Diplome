@@ -1,7 +1,7 @@
 
 
-@import url(./search__form_input/search__form_input.css);
-@import url(./search__form_button/search__form_button.css);
+@import url(./search__form-input/search__form-input.css);
+@import url(./search__form-button/search__form-button.css);
 
 .search__form {
     position: relative;
@@ -17,7 +17,7 @@
     }    
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 450px) {
     .search__form  {
         flex-direction: column;
         border: 0px;

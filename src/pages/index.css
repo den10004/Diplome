@@ -1,0 +1,32 @@
+
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+@import url(../blocks/root/root.css);
+@import url(../blocks/author/author.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/clients/clients.css);
+@import url(../blocks/technologies/technologies.css);
+@import url(../blocks/question/question.css);
+@import url(../blocks/preloader/preloader.css);
+@import url(../blocks/commits/commits.css);
+@import url(../blocks/analytics/analytics.css);
+
+
+
+
+body {
+  background-color: white;
+  /*max-width: 1440px;*/
+  /*margin: auto;*/
+ 
+}
+
+
+
+.page {
+  min-width: 320px;
+/*  max-width: 1440px;*/
+/*  margin: 0 auto;*/
+  
+}
+

@@ -1,0 +1,42 @@
+.header__newsAnalyzer {
+  display: flex;
+  font-family: 'Roboto Slab' Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  height: 22px;
+}
+
+@media screen and (max-width: 425px) {
+  .header__newsAnalyzer {
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+
+.header__newsAnalyzer_clients {
+  display: flex;
+  font-family: 'Roboto Slab' Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  height: 22px;
+  color:black;
+}
+  
+
+@media screen and (max-width: 425px) {
+  .header__newsAnalyzer_clients {
+    font-size: 16px;
+  }
+}
+
+
+

@@ -1,0 +1,23 @@
+
+.analytics__block-heading {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    margin-top: 80px;
+    margin-bottom: 0px;
+    color: #1A1B22;
+}
+
+@media screen and (max-width: 768px) {
+    .analytics__block-heading {	
+        margin-top: 40px;
+    }
+  }
+
+@media screen and (max-width: 425px) {
+    .analytics__block-heading {	
+        margin-top: 24px;
+    }
+  }

@@ -1,0 +1,32 @@
+.preloader__result-resultblocs-analitics {
+	font-family: 'Roboto' Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+	align-items: center;
+	text-align: center;
+	color: #1A1B22;
+	border: 0px;
+
+}
+
+@media screen and (max-width: 1280px) {
+	.preloader__result-resultblocs-analitics  {
+		font-size: 18px;
+		line-height: 24px;
+    }
+  }
+
+
+  @media screen and (max-width: 718px) {
+	.preloader__result-resultblocs-analitics  {
+		font-size: 18px;
+		line-height: 24px;
+		margin-top: 16px;
+    }
+  }
+
+
+
+

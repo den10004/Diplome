@@ -1,0 +1,21 @@
+
+
+.footer__copypro-copyright {
+  font-family: 'Roboto' Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #B6BCBF;
+  margin-top: 33px;
+  margin-bottom: 22px;
+  text-decoration: none;
+  width: 105px;
+  height: 24px;
+  }
+
+  @media screen and (max-width: 425px) {
+    .footer__copypro-copyright {
+      margin-top: 40px;
+    }
+  }

@@ -1,0 +1,36 @@
+@import url(./technologies__used/technologies__used.css);
+@import url(./technologies__blocks/technologies__blocks.css);
+@import url(./technologies__icons/technologies__icons.css);
+
+
+  .technologies__container {
+    display: flex; 
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100%-208px);
+  }
+
+  @media screen and (max-width: 1024px) {
+    .technologies__container {
+    width: calc(100%-80px);   
+    }
+  }
+
+  
+  @media screen and (max-width: 910px) {
+    .technologies__container {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    width: calc(100%-80px);
+    }
+  }
+
+  @media screen and (max-width: 616px) {
+    .technologies__container {
+    width: calc(100%-32px);
+    }
+  }

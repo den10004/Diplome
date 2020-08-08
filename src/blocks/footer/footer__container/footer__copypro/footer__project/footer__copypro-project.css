@@ -1,0 +1,33 @@
+@import url(./footer__copypro_project-main/footer__copypro-project-main.css);
+@import url(./footer__copypro-project-yandex/footer__copypro-project-yandex.css);
+@import url(./footer__copypro-project-about/footer__copypro-project-about.css);
+
+
+.footer__copypro-project {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Roboto' Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;   
+  text-align: center;
+  color: #1A1B22;
+  list-style-type: none;
+  padding-left: 0px;
+  margin-top: 30px;
+  width: 370px;
+ }
+
+ @media screen and (max-width: 600px) {
+  .footer__copypro-project {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    height: 120px;
+    width: 184px;
+   justify-content: space-between;
+  }
+}
+

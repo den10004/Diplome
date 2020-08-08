@@ -1,0 +1,48 @@
+@import url(./preloader__result-resultblocs-resultsearch/preloader__result-resultblocs-resultsearch.css);
+@import url(./preloader__result-resultblocs-analitics/preloader__result-resultblocs-analitics.css);
+
+
+.preloader__result-resultblocs {
+	margin-top: 80px;
+	width: 1232px;
+	display: flex;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 1280px) {
+	.preloader__result-resultblocs  {
+		width: 688px;
+	}	
+}
+
+
+
+@media screen and (max-width: 1050px) {
+	.preloader__result-resultblocs  {
+		width: 688px;
+	}	
+}
+
+@media screen and (max-width: 768px) {
+	.preloader__result-resultblocs  {
+		width: 688px;
+	}	
+}
+
+@media screen and (max-width: 718px) {
+	.preloader__result-resultblocs  {
+		flex-direction: column;
+		margin-top: 32px;
+		width: 393px;
+	}	
+}
+
+@media screen and (max-width: 425px) {
+	.preloader__result-resultblocs  {
+		flex-direction: column;
+		margin-top: 32px;
+		width: 288px;
+	}	
+}
+
+

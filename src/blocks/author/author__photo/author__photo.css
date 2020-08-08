@@ -1,0 +1,23 @@
+.author__photo {
+    border-radius: 1000px;
+    width: 464px;
+}
+
+
+
+  
+  @media screen and (max-width: 990px) {
+    .author__photo {
+      width: 232px;
+      height: 232px;
+    }
+  }
+
+
+
+  @media screen and (max-width: 650px) {
+    .author__photo {
+      width: 272px;
+      height: 272px; 
+    }
+  }

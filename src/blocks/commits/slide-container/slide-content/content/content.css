@@ -1,0 +1,35 @@
+@import url(./content-data/content-data.css);
+@import url(./content-main/content-main.css);
+@import url(./content-main-text/content-main-text.css);
+
+.content {
+width: 400px;  
+height: 288px;  
+justify-content: center;
+border-radius: 10px;
+margin-left: 18px;
+background-color: #ffffff;
+flex-shrink: 0;
+z-index: 0;
+margin-bottom: 48px;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .content  {	
+        width: 336px;  
+        height: 242px; 
+        margin-bottom: 32px; 
+     }
+   }
+
+   @media screen and (max-width: 425px) {
+    .content  {	
+        width: 288px;  
+        height: 264px;  
+        margin-bottom: 16px;
+     }
+   }

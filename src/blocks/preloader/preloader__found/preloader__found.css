@@ -1,0 +1,32 @@
+@import url(./preloader__found-image/preloader__found-image.css);
+@import url(./preloader__found-nothing/preloader__found-nothing.css);
+@import url(./preloader__found-sorry/preloader__found-sorry.css);
+
+
+
+.preloader__found {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .preloader__found {
+  max-width: calc(100% - 6px);
+  margin-top: 40px;
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+    .preloader__found {
+    max-width: calc(100% - 6px);
+    margin-top: 32px;
+    }
+  }
+

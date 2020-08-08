@@ -1,0 +1,14 @@
+@import url(./content-main-photo/content-main-photo.css);
+@import url(./main-text/main-text.css);
+
+.content-main {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 64px;
+    margin-top: 16px;
+    z-index: 50;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }

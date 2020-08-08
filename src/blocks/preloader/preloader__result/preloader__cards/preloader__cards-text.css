@@ -1,0 +1,10 @@
+@import url(./preloader__cards-content-header.css);
+@import url(./preloader__cards-content-text.css);
+
+.preloader__cards-content {
+    display: flex;
+    flex-direction: row;
+    width: 352px;
+    height: 186px;
+
+}

@@ -1,0 +1,30 @@
+
+#button-right {
+    position: absolute;
+    right: 10px;
+    z-index: 3;
+    top: 110px;
+ }
+ 
+  @media screen and (max-width: 768px) {
+    #button-right {	
+      display: none;
+     }
+   }
+
+
+
+
+  #button-left {
+    position: absolute;
+    z-index: 3;
+    left: 10px;
+     top: 110px;
+  }
+
+ 
+  @media screen and (max-width: 768px) {
+   #button-left {	
+    display: none;
+    }
+  }

@@ -1,0 +1,21 @@
+
+
+.preloader__found-sorry {
+	font-family: 'Roboto' Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+	color: #B6BCBF;
+	margin-top: 16px;
+	margin-bottom: 80px;
+
+}
+
+
+@media screen and (max-width: 320px) {
+	.preloader__found-sorry  {
+		font-size: 16px;
+    }
+  }

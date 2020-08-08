@@ -1,0 +1,111 @@
+@import url(./header__container/header__container.css);
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    height: 80px;
+    position: relative;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .header{
+  height: 64px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header{
+ height: 56px;
+  }
+}
+
+
+
+  #header-line {
+    position: absolute;
+    width: 100%;
+    top: 72px;
+  }
+
+  @media screen and (max-width: 768px) {
+    #header-line {
+      top: 56px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    #header-line {
+      top: 48px;
+    }
+  }
+
+  #header-menu-line {
+    position: absolute;
+    top: 70px;
+    right: 215px;
+    width: 80px;
+  }
+
+  @media screen and (max-width: 768px) {
+    #header-menu-line {
+      right: 155px;
+      top: 55px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    #header-menu-line {
+      right: 100px;
+      top: 46px;
+      width: 70px;
+    }
+  }
+
+
+
+  #header-line-clients {
+    position: absolute;
+    width: 100%;
+    top: 72px;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    #header-line-clients  {
+      top: 56px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    #header-line-clients  {
+      top: 48px;
+    }
+  }
+
+
+
+  #menu-line-clients {
+    position: absolute;
+    z-index: 1;
+    top: 71px;
+    right: 100px;
+    width: 80px;
+  }
+
+  @media screen and (max-width: 768px) {
+    #menu-line-clients  {
+      right: 40px;
+      top: 55px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    #menu-line-clients  {
+      right: 16px;
+      top: 49px;
+      width: 80px;
+    }
+  }

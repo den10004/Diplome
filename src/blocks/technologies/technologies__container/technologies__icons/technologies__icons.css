@@ -1,0 +1,27 @@
+@import url(./technologies__icons-language/technologies__icons-language.css);
+@import url(./technologies__icons-symbols/technologies__icons-symbols.css);
+
+  .technologies__icons {
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    margin-bottom: 0px;
+    margin-right: 73px;
+  
+  }
+
+  @media screen and (max-width: 1171px) {
+    .technologies__icons  {
+      margin-right: 23px;
+        }
+      }
+    
+  
+@media screen and (max-width: 616px) {
+  .technologies__icons {
+      margin-right: 0px;
+      margin-top: 40px;
+    
+  
+  }
+}

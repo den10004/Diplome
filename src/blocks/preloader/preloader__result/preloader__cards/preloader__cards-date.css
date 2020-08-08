@@ -1,0 +1,42 @@
+.preloader__cards-date {
+font-family: 'Source Sans Pro' , Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 24px;
+align-items: center;
+color: #B6BCBF;
+text-align: left;
+margin-top: 20px;
+width: 352px;
+}
+
+@media screen and (max-width: 1280px) {
+  .preloader__cards-date {
+    margin-top: 15px;	
+    width: 192px;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .preloader__cards-date {
+    margin-top: 15px;	
+    width: 192px;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .preloader__cards-date {	
+        width: 192px;	
+    }
+  }
+
+  
+@media screen and (max-width: 718px) {
+  .preloader__cards-date  {	
+      width: 256px;
+    }
+  }

@@ -1,0 +1,27 @@
+@import url(./technologies__container/technologies__container.css);
+
+.technologies {
+    display: flex;
+    justify-content: center;
+    background: #F5F6F7;
+    margin-top: 94px;
+    width: 100%; 
+    height: 334px;
+}
+
+
+@media screen and (max-width: 910px) {
+  .technologies {
+    display: flex;
+    height: 341px;
+  }
+}
+
+
+  @media screen and (max-width: 616px) {
+    .technologies {
+      margin-top: 16px;
+        height: 528px;
+    }
+  }
+

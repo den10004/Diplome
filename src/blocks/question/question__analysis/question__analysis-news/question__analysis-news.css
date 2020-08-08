@@ -1,0 +1,8 @@
+@import url(./question__analysis-news-week/question__analysis-news-week.css);
+@import url(./question__analysis-news-answerweek/question__analysis-news-answerweek.css);
+
+.question__analysis-news {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+}

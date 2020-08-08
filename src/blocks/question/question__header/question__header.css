@@ -1,0 +1,24 @@
+@import url(./question__header-major/question__header-major.css);
+@import url(./question__header-analytics/question__header-analytics.css);
+
+.question__header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-left: 104px;
+}
+
+@media screen and (max-width: 768px) {
+    .question__header {
+        margin-top: 32px;
+        margin-left: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    .question__header {
+        display: none;
+    }
+  }
+  
+

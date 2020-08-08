@@ -1,0 +1,48 @@
+@import url(./commits__description-history/commits__description-history.css);
+@import url(./commits__description-link/commits__description-link.css);
+
+
+.commits__description {
+    display: flex;
+    flex-direction: row;
+    margin-top: 72px;
+    width: calc(100%-208px);
+    justify-content: space-between;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .commits__description {	
+    width: calc(100%-80px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .commits__description {	
+    margin-top: 40px;
+  }
+}
+
+
+
+  @media screen and (max-width: 425px) {
+    .commits__description {	
+      margin-top: 32px;
+        width:393px;	
+        line-height: 40px;  
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .commits__description {	
+        width:343px;
+     
+    }
+  }
+
+  
+  @media screen and (max-width: 320px) {
+    .commits__description {	
+        width:288px;	
+    }
+  }

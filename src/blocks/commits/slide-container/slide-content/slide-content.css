@@ -1,0 +1,14 @@
+@import url(./content/content.css);
+
+
+
+
+
+.slide-content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden; 
+ 
+ }

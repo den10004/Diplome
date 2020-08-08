@@ -1,0 +1,15 @@
+@import url(./preloader__result-resultblocs/preloader__result-resultblocs.css);
+@import url(./preloader__result-blocs/preloader__result-blocs.css);
+@import url(./preloader__result-blocs/preloader__result-button/preloader__result-button.css);
+
+
+.preloader__result {
+	display: flex;	
+	flex-direction: column;
+	max-width: 100%;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+  
+
+}

@@ -1,0 +1,27 @@
+@import url(../analytics/analytics__block/analytics__block.css);
+
+
+.analytics {
+    background: #F5F6F7;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    height: 866px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .analytics {	
+        margin-top: 40px;
+        height: 786px;
+    }
+  }
+
+
+  @media screen and (max-width: 425px) {
+    .analytics {
+        margin-top: 24px;	
+        height: 516px;
+    }
+  }

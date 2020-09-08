@@ -8,6 +8,7 @@
   <title>NewsAnalyzer</title>
 
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+
 </head>
 
 <body>
@@ -101,12 +102,57 @@
         <div class="commits__description-history">История коммитов из GitHub </div>
         <a class="commits__description-link" href="https://github.com/den10004?tab=repositories">Открыть в Github></a>
       </div>
+
+   
+
+      <div class="slider-container">
+       
+      
+          <div class="slider-buttons">
+            <img class="swiper-button-prev" src="<%=require('./images/slider-control1.svg')%>">
+            <img class="swiper-button-next" src="<%=require('./images/slider-control.svg')%>">
+          </div>
+        
+        <div class="swiper-container">
+
+        <div class="swiper-wrapper">
+        <div class="swiper-slide card">
+        <!--   <div class="content">
+                <div class="content-data">14 августа, 2019 </div>
+                <div class="content-main">
+                  <img class="content-main-photo" src="<%=require('./images/anton.png')%>" alt="github-photo">
+                  <div class="main-text">
+                    <div class="main-text-name">Антон Долинин</div>
+                    <div class="main-text-email">anton@yandex.ru</div>
+                  </div>
+                </div>
+                <div class="content-main-text">
+                  Emmet (formerly Zen Coding) is a web- developer’s toolkit that can greatly improve your HTML & CSS
+                  workflow
+                </div>
+              </div>-->
+            </div>
+            <div class="swiper-slide card"></div>
+            <div class="swiper-slide card"></div>
+            <div class="swiper-slide card"></div>
+            <div class="swiper-slide card"></div>
+            <div class="swiper-slide card"></div>
+          </div>
+      
+
+          <div class="swiper-pagination"></div>
+        </div>
+        
+      </div>
+<!--
+ 
       <div class="slide-container">
 
         <img id="button-right" src="<%=require('./images/slider-control.svg')%>">
         <img id="button-left" src="<%=require('./images/slider-control1.svg')%>">
 
         <div class="slide-content">
+          
           <div class="content">
             <div class="content-data">14 августа, 2019 </div>
             <div class="content-main">
@@ -186,6 +232,7 @@
           </div>
 
         </div>
+
       </div>
 
 
@@ -197,7 +244,7 @@
 
       </div>
 
-
+-->
 
       <button class="commits__button" href="https://github.com/den10004?tab=repositories">Открыть в GitHub</button>
   </div>
@@ -235,7 +282,7 @@
 
   <script src=" <%= htmlWebpackPlugin.files.js %>"></script>
 
-
 </body>
+
 
 </html>

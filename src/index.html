@@ -34,11 +34,11 @@
         <h1 class="search__title">Что в мире творится?</h1>
         <p class="search__subtitle"> Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за
           прошедшую неделю</p>
-        <div class="search__form">
-          <input class="search__form-input" pattern="[а-яё]{1,}" placeholder="введите ключевое слово" required>
+        <form class="search__form" name = "search">
+          <input class="search__form-input" placeholder="введите ключевое слово" required>
 
-          <button class="search__form-button">искать</button>
-        </div>
+          <button class="search__form-button" type="button">искать</button>
+        </form>  <!--div -> form-->
       </section>
     </div>
 
@@ -62,6 +62,7 @@
         </div>
 
         <div class="preloader__result_blocs">
+    <!--      
           <div class="preloader__cards">
             <img class="preloader__cards-image" src="<%=require('./images/lenta.png')%>" alt="cards">
             <div class="preloader__cards-date">2 августа, 2019</div>
@@ -138,7 +139,7 @@
             </div>
             <div class="preloader__cards-origin">Медиазона</div>
           </div>
-
+-->
         </div>
         <button class="preloader__result_button">Показать ещё</button>
 
@@ -187,6 +188,7 @@
 
 
   <script src=" <%= htmlWebpackPlugin.files.js %>"></script>
+  
 
 
 </body>

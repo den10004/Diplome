@@ -1,5 +1,10 @@
 .preloader__cards-image {
     border-radius: 10px 10px 0px 0px;
+    width: 100%;	
+    height: 280px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
 }
 
 
@@ -32,8 +37,9 @@
 
   @media screen and (max-width: 718px) {
     .preloader__cards-image  {	
+
         width: 288px;	
-        height: 196px;
+        height: 150px;
     }
 
   }

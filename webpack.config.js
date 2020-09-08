@@ -9,7 +9,7 @@ const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
     entry: { main: './src/js/index.js',
-            second: './src/js/second.js',
+            second: './src/js/clients.js',
             paper: './src/js/paper.js',
 },
     output: {

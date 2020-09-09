@@ -59,19 +59,14 @@ apiNews.addServerNews().then(res => {
   function getPreloader(isLoading) {//вкл прелоадера
     if (isLoading) {
       preloaderSearch.style.display = "flex";
-      preloaderResult.style.display = "none";
+      preloaderResultBlocs.style.display = "none";
     } else {
       preloaderSearch.style.display = "none";
-      preloaderResult.style.display = "flex";
+      preloaderResultBlocs.style.display = "grid";
     }
   }
 
-/*
-function getPrepoader() {  //вкл прелоадера
-  preloaderSearch.style.display = "flex";
-  preloaderResult.style.display = "none"
-}
-*/
+
 buttonSearchNews.addEventListener('click', sendInput);//прелоадер
 
 function searchInput (input) {
@@ -85,7 +80,7 @@ function searchInput (input) {
 function sendInput(e) {//input
   const input = document.querySelector('.search__form-input')
   console.log(input.value)
- //getPreloader(true)
+  getPreloader(true)
   //event.preventDefault();
   searchInput(input.value)
     .then((res) => {
@@ -101,9 +96,9 @@ function sendInput(e) {//input
     .catch((err) => {
       renderError(`Ошибка: ${err}`);
     })
-   /* .finally(() => {
-      renderLoading(false);
-    });*/
+    .finally(() => {
+      getPreloader(false);
+    });
 
 
 

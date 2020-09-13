@@ -34,7 +34,8 @@ export class NewsCard {
 
     removeCards() {
       document.querySelector('.preloader__result-blocs').innerHTML = '';
-      }
+      document.querySelector('.preloader__found').style.display = "none";
+    }
 
   }
   

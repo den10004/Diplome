@@ -22,7 +22,7 @@
           <div class="header__menu">
             <a class="header__menu-main">Главная</a>
             <a class="header__menu-about" href="./clients.html">О проекте</a>
-            
+
           </div>
         </div>
         <hr id="header-menu-line" style="border: 1px solid white">
@@ -34,35 +34,35 @@
         <h1 class="search__title">Что в мире творится?</h1>
         <p class="search__subtitle"> Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за
           прошедшую неделю</p>
-        <form class="search__form" name = "search">
+        <form class="search__form" name="search">
           <input class="search__form-input" placeholder="введите ключевое слово" required>
 
           <button class="search__form-button" type="button">искать</button>
-        </form>  <!--div -> form-->
+        </form>
+        <!--div -> form-->
       </section>
     </div>
 
     <section class="preloader">
-      <div class="preloader__search">
-        <div class="preloader__search-circle"></div>
-        <div class="preloader__search-news">Идёт поиск новостей... </div>
-      </div>
-
-      <div class="preloader__found">
-        <img class="preloader__found-image" src="<%=require('./images/ellipce.svg')%>" alt="ellipce">
-        <div class="preloader__found-nothing">Ничего не найдено </div>
-        <div class="preloader__found-sorry">К сожалению по вашему запросу ничего не найдено.</div>
-      </div>
-
-
       <div class="preloader__result">
         <div class="preloader__result-resultblocs">
           <div class="preloader__result-resultblocs-resultsearch"> Результаты поиска</div>
           <a class="preloader__result-resultblocs-analitics" href="./paper.html">Посмотреть аналитику ></a>
         </div>
+        <div class="preloader__search">
+          <div class="preloader__search-circle"></div>
+          <div class="preloader__search-news">Идёт поиск новостей... </div>
+        </div>
 
-        <div class="preloader__result_blocs">
-    <!--      
+        <div class="preloader__found">
+          <img class="preloader__found-image" src="<%=require('./images/ellipce.svg')%>" alt="ellipce">
+          <div class="preloader__found-nothing">Ничего не найдено </div>
+          <div class="preloader__found-sorry">К сожалению по вашему запросу ничего не найдено.</div>
+        </div>
+
+
+        <div class="preloader__result-blocs">
+          <!--      
           <div class="preloader__cards">
             <img class="preloader__cards-image" src="<%=require('./images/lenta.png')%>" alt="cards">
             <div class="preloader__cards-date">2 августа, 2019</div>
@@ -146,9 +146,6 @@
 
     </section>
 
-
-
-
     <section class="author">
       <div class="author__content">
         <img class="author__photo" src="<%=require('./images/author.png')%>" alt="photo" alt="author">
@@ -175,8 +172,10 @@
           <a class="footer__copypro-copyright" href="https://vk.com/den10004">&copy 2020 Денис</a>
         </div>
         <ul class="footer__links">
-          <li><a class="footer__links-github" href="https://github.com/den10004?tab=repositories"><img src="<%=require('./images/github.png')%>"></a></li>
-          <li><a class="footer__links-facebook" href="https://vk.com/den10004"><img src="<%=require('./images/facebook.png')%>"></a>
+          <li><a class="footer__links-github" href="https://github.com/den10004?tab=repositories"><img
+                src="<%=require('./images/github.png')%>"></a></li>
+          <li><a class="footer__links-facebook" href="https://vk.com/den10004"><img
+                src="<%=require('./images/facebook.png')%>"></a>
           </li>
         </ul>
       </div>
@@ -188,7 +187,7 @@
 
 
   <script src=" <%= htmlWebpackPlugin.files.js %>"></script>
-  
+
 
 
 </body>

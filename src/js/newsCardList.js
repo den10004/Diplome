@@ -10,7 +10,9 @@ export class NewsCardList {
     render(cards) {
       cards.articles.forEach(item => {
         this.addNewsCard(item.urlToImage, item.publishedAt, item.description, item.title, item.name)
-       // console.log(cards)
+       console.log(cards)
+  
+      localStorage.setItem('cards', JSON.stringify(cards));
       })
     }
   }

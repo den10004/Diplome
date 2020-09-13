@@ -6,9 +6,6 @@ export class NewsCard {
       this.title = title;
       this.name = name;
     }
-    remove() {
-      this.newCard.remove();
-    }
  
   
     create() {
@@ -32,14 +29,12 @@ export class NewsCard {
       newCard.querySelector(".preloader__cards-content-text").textContent = this.title;
       newCard.querySelector(".preloader__cards-origin").textContent = this.name;
       this.newCard = newCard;
-      return newCard;
-  
-  
-  
-  
+      return newCard;  
     }
-    setNews = (title) => {
-      this.title = title;
-    }
+
+    removeCards() {
+      document.querySelector('.preloader__result-blocs').innerHTML = '';
+      }
+
   }
   

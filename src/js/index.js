@@ -24,7 +24,6 @@ import "./clients.js";
 
 //const apiUrlNews = 'https://newsapi.org/v2/everything?language=ru&sortBy=publishedAt&pageSize=100&qInTitle=россия&apiKey=10e8db0981ec4941becf1c27cd92454d'
 
-
 const resultsBlock = document.querySelector('.preloader__result-blocs');
 
 const configNews = {
@@ -64,7 +63,7 @@ function renderError () { //Ничего не найдено
  
 
 buttonSearchNews.addEventListener('click', sendInput);//button
-
+resultButton.addEventListener('click', sendInput) //ИСПРАВИТЬ
 function searchInput(input) {
   return fetch(`https://newsapi.org/v2/everything?language=ru&sortBy=publishedAt&pageSize=100&qInTitle=${input}&apiKey=10e8db0981ec4941becf1c27cd92454d`)
 
@@ -105,10 +104,6 @@ function sendInput(e) {//input
     getPreloader(false);
     })
 };
-
-
-
-
 
 
 import { ApiNews } from "./apiNews.js";

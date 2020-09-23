@@ -9,20 +9,26 @@ const input = document.querySelector('.search__form-input');
 const form = document.forms.search;
 const resultButton = document.querySelector('.preloader__result_button');
 const preloader = document.querySelector('.preloader')
+//const cardsDate = document.querySelector('preloader__cards-date')
+let currentCards = NUMBER_CARDS;
+
 
 
 import "../pages/index.css";
 import "./swiper.js";
 import "./slider.js";
 import "./clients.js";
-
-
-
-
+import "./LocalStorage.js";
+import "./modData.js";
+import "./analytics.js"
 
 /*---------------------------------------------------------------------------------*/
 
+
 //const apiUrlNews = 'https://newsapi.org/v2/everything?language=ru&sortBy=publishedAt&pageSize=100&qInTitle=россия&apiKey=10e8db0981ec4941becf1c27cd92454d'
+
+
+
 
 const resultsBlock = document.querySelector('.preloader__result-blocs');
 
@@ -33,19 +39,15 @@ const configNews = {
   }
 };
 
-
 function createNews(urlToImage, publishedAt, description, title, name) {
   return new NewsCard(urlToImage, publishedAt, description, title, name);
 }
 
+const localStorage1 = new LocalStorage()
 const newsCardList = new NewsCardList(resultsBlock, createNews);
 const apiNews = new ApiNews(configNews);
 //const api = new Api(config);
 const newsCard = new NewsCard(input);
-
-
-
-
 
 
 function getPreloader(isLoading) {//вкл прелоадера
@@ -61,25 +63,47 @@ function renderError () { //Ничего не найдено
   preloaderResultBlocs.style.display = "none";
 }
  
-
 buttonSearchNews.addEventListener('click', sendInput);//button
-resultButton.addEventListener('click', sendInput) //ИСПРАВИТЬ
+
+
+function numberPlus () {   //счётчик карточек
+  currentCards = currentCards + NUMBER_CARDS;
+  return currentCards;
+}
+
+resultButton.addEventListener('click', () => { // "показать ещё"
+  numberPlus();
+  
+  console.log(currentCards);
+  const local = localStorage1.load(CARDS);
+  console.log(local)
+  newsCardList.render(local.articles.slice(currentCards - NUMBER_CARDS, currentCards))
+  /*if (currentCards >= local) {
+    resultButton.style.display = "none";
+  }*/
+});
+  
+
 function searchInput(input) {
   return fetch(`https://newsapi.org/v2/everything?language=ru&sortBy=publishedAt&pageSize=100&qInTitle=${input}&apiKey=10e8db0981ec4941becf1c27cd92454d`)
 
 }
 
-
 /*------------input-----------*/
 
+
 function sendInput(e) {//input
+  preloader.style.display = "flex";
   e.preventDefault();
-  newsCard.removeCards(); 
-  localStorage.clear();
-  const input = document.querySelector('.search__form-input')
-  //console.log(input.value)
+  newsCard.removeCards(); ///????///
+  const localInput = input.value
+  console.log(localInput)
+  localStorage.setItem('input', localInput);
+  
   getPreloader(true)
   searchInput(input.value)
+
+
     .then((res) => {
       if (res.ok) {
         return res.json();
@@ -92,10 +116,15 @@ function sendInput(e) {//input
         return renderError() 
       }
       else
-      newsCardList.render(res);
+       localStorage1.save(CARDS, res);
+      console.log(res)
+      newsCardList.render(res.articles.slice(0,NUMBER_CARDS));
       preloaderResultBlocs.style.display = "grid";
+     /* if (currentCards >= local) {
+        resultButton.style.display = "none";
+      }*/
     })
-
+    
     .catch(() => {
       renderError()   
     })
@@ -105,9 +134,14 @@ function sendInput(e) {//input
     })
 };
 
-
 import { ApiNews } from "./apiNews.js";
 import { NewsCardList } from "./newsCardList.js";
 import { NewsCard } from "./newsCard.js";
+import  LocalStorage  from "./LocalStorage.js";
+import { CARDS, NUMBER_CARDS } from "./constants";
+//import { modData } from "./modData";
+
 //import {Api} from "./api";
+
+
 

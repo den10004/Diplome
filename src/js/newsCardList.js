@@ -1,13 +1,12 @@
+import {NUMBER_CARDS} from './index.js';
+
 export class NewsCardList {
     constructor(container, createCard) {
       this.container = container;
       this.createCard = createCard;
-      this.numberCards = 3;
       this.firstCard = 0;
+      this.numberCards = NUMBER_CARDS;
     }
-  
-
-  
 
     addNewsCard(urlToImage, publishedAt, description, title, name) {
       const card = this.createCard(urlToImage, publishedAt, description, title, name)
@@ -15,12 +14,12 @@ export class NewsCardList {
     }
   
    
-    render(cards) {
-      console.log(cards.articles.slice(0))
-       cards.articles.slice(this.firstCard, this.numberCards).forEach(item => {
-        this.addNewsCard(item.urlToImage, item.publishedAt, item.description, item.title, item.name)
+    render(articles) {
+      articles.forEach(item => {
+      this.addNewsCard(item.urlToImage, item.publishedAt, item.description, item.title, item.name)
       })
     }    
-
+  
+  
 }
 

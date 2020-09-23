@@ -1,3 +1,5 @@
+import {MONTH_ARRAY} from './constants.js';
+
 export class NewsCard {
     constructor(urlToImage, publishedAt, description, title, name) {
       this.urlToImage = urlToImage;
@@ -6,8 +8,7 @@ export class NewsCard {
       this.title = title;
       this.name = name;
     }
- 
-  
+
     create() {
       const list = `<div class="preloader__cards">
         <div class="preloader__cards-image" style="background-image: url(https://kamchatka.jpg) alt="cards"></div>
@@ -29,6 +30,17 @@ export class NewsCard {
       newCard.querySelector(".preloader__cards-content-text").textContent = this.title;
       newCard.querySelector(".preloader__cards-origin").textContent = this.name;
       this.newCard = newCard;
+
+      //const MONTH_ARRAY = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
+      const cardsDate = newCard.querySelector(".preloader__cards-date");
+      cardsDate.textContent = this.publishedAt;
+      console.log(cardsDate.textContent = this.publishedAt)
+      let data = new Date(this.publishedAt)
+      cardsDate.textContent = data.getDate() + ' ' + MONTH_ARRAY[data.getMonth()] + ', ' + data.getFullYear()
+      
+
+
+
       return newCard;  
     }
 
@@ -36,6 +48,6 @@ export class NewsCard {
       document.querySelector('.preloader__result-blocs').innerHTML = '';
       document.querySelector('.preloader__found').style.display = "none";
     }
-
+ 
   }
-  
+

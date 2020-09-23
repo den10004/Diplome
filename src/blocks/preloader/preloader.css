@@ -4,7 +4,8 @@
 
 
 .preloader {
-display: flex;
+/*display: flex;*/
+display: none;
 flex-direction: column;
 max-width: 100%;
 background: #F5F6F7;

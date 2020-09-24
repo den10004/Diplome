@@ -15,12 +15,12 @@ let currentCards = NUMBER_CARDS;
 
 
 import "../pages/index.css";
-import "./swiper.js";
-import "./slider.js";
-import "./clients.js";
+//import "./swiper.js";
+//import "./slider.js";
+//import "./clients.js";
 import "./LocalStorage.js";
 import "./modData.js";
-import "./analytics.js"
+//import "./analytics.js"
 
 /*---------------------------------------------------------------------------------*/
 

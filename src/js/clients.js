@@ -1,5 +1,6 @@
 import "../pages/index.css";
-
+import "./swiper.js";
+import "./slider.js";
 
 const apiUrl = NODE_ENV === 'development' ? 'http://api.github.com/repos/den10004/Diplome/commits' : 'https://api.github.com/repos/den10004/Diplome/commits'
 

@@ -10,7 +10,7 @@ const isDev = process.env.NODE_ENV === 'development';
 module.exports = {
     entry: { main: './src/js/index.js',
             second: './src/js/clients.js',
-            paper: './src/js/paper.js',
+            paper: './src/js/analytics.js',
 },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -64,6 +64,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             inject: false,
             hash: true,
+            chunks: ['main'],
             template: './src/index.html',
             filename: 'index.html',
         }),
@@ -71,6 +72,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             inject: false,
             hash: true,
+            chunks: ['second'],
             template: './src/clients.html', 
             filename: 'clients.html' 
         }),
@@ -78,6 +80,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             inject: false,
             hash: true,
+            chunks: ['paper'],
             template: './src/paper.html', 
             filename: 'paper.html' 
         }),

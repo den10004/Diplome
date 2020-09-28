@@ -8,15 +8,15 @@ export class NewsCardList {
       this.numberCards = NUMBER_CARDS;
     }
 
-    addNewsCard(urlToImage, publishedAt, description, title, name) {
-      const card = this.createCard(urlToImage, publishedAt, description, title, name)
+    addNewsCard(urlToImage, publishedAt, description, title, name, url) {
+      const card = this.createCard(urlToImage, publishedAt, description, title, name, url)
       this.container.appendChild(card.create());
     }
   
    
     render(articles) {
       articles.forEach(item => {
-      this.addNewsCard(item.urlToImage, item.publishedAt, item.description, item.title, item.name)
+      this.addNewsCard(item.urlToImage, item.publishedAt, item.description, item.title, item.source.name, item.url)
       })
     }    
   

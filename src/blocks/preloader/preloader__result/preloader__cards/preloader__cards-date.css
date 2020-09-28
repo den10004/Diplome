@@ -7,13 +7,13 @@ line-height: 24px;
 align-items: center;
 color: #B6BCBF;
 text-align: left;
-margin-top: 20px;
-width: 352px;
+margin-bottom: 12px;
+
 }
 
 @media screen and (max-width: 1280px) {
   .preloader__cards-date {
-    margin-top: 15px;	
+
     width: 192px;
   }
 }
@@ -21,7 +21,7 @@ width: 352px;
 
 @media screen and (max-width: 1024px) {
   .preloader__cards-date {
-    margin-top: 15px;	
+ 
     width: 192px;
   }
 }

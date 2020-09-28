@@ -13,8 +13,8 @@ const preloader = document.querySelector('.preloader')
 let currentCards = NUMBER_CARDS;
 
 
-
 import "../pages/index.css";
+//import "./validation.js"
 //import "./swiper.js";
 //import "./slider.js";
 //import "./clients.js";
@@ -24,10 +24,21 @@ import "./modData.js";
 
 /*---------------------------------------------------------------------------------*/
 
-
 //const apiUrlNews = 'https://newsapi.org/v2/everything?language=ru&sortBy=publishedAt&pageSize=100&qInTitle=россия&apiKey=10e8db0981ec4941becf1c27cd92454d'
 
+function validat() {
+  if (input.value === ""){
+    input.setCustomValidity('Введите ключевое слово');
+    buttonSearchNews.disabled = true;
+    return false;
+  } else {
+    input.setCustomValidity('');
+    buttonSearchNews.disabled = false;
+    return true;
+  }
+};
 
+///////////////////////////////////////////////////////////////////////////////////////////////
 
 
 const resultsBlock = document.querySelector('.preloader__result-blocs');
@@ -39,22 +50,28 @@ const configNews = {
   }
 };
 
-function createNews(urlToImage, publishedAt, description, title, name) {
-  return new NewsCard(urlToImage, publishedAt, description, title, name);
+function createNews(urlToImage, publishedAt, description, title, name, url) {
+ return new NewsCard(urlToImage, publishedAt, description, title, name, url);
 }
+
+
 
 const localStorage1 = new LocalStorage()
 const newsCardList = new NewsCardList(resultsBlock, createNews);
 const apiNews = new ApiNews(configNews);
-//const api = new Api(config);
 const newsCard = new NewsCard(input);
 
 
 function getPreloader(isLoading) {//вкл прелоадера
   if (isLoading) {
     preloaderSearch.style.display = "flex";
+    buttonSearchNews.disabled = true;
+    input.innerHTML = 'Результат операции';
+    
   } else {
     preloaderSearch.style.display = "none";
+    buttonSearchNews.disabled = false;
+    input.innerHTML = 'Результат операции';
   }
 }
 
@@ -93,14 +110,27 @@ function searchInput(input) {
 
 
 function sendInput(e) {//input
+ 
+
+
   preloader.style.display = "flex";
   e.preventDefault();
   newsCard.removeCards(); ///????///
   const localInput = input.value
+
   console.log(localInput)
+  val()
+  function val () {
+    if (localInput === '') {
+      buttonSearchNews.disabled = true;
+    }
+    else {
+      buttonSearchNews.disabled = false;
+    }
+  }
+   
   localStorage.setItem('input', localInput);
-  
-  getPreloader(true)
+    getPreloader(true)
   searchInput(input.value)
 
 
@@ -140,7 +170,6 @@ import { NewsCard } from "./newsCard.js";
 import  LocalStorage  from "./LocalStorage.js";
 import { CARDS, NUMBER_CARDS } from "./constants";
 //import { modData } from "./modData";
-
 //import {Api} from "./api";
 
 

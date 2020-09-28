@@ -7,11 +7,9 @@
 .preloader__cards {
 display: flex;
 flex-direction: column;
-justify-content: center;
-text-align: center;
-
+/*justify-content: center;*/
 width: 400px;
-max-height: 576px;
+height: 576px;
 background: #FFFFFF;
 border-radius: 10px;
 border-top: 10px;

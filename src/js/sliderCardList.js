@@ -1,16 +1,18 @@
 export class SliderCardList {
-  constructor(container, createCard) {
-      this.container = container;
-      this.createCard = createCard;
+    constructor(container, createCard) {
+        this.container = container;
+        this.createCard = createCard;
     }
-    addSliderCard(name, email, date, message, avatar_url) {
-      const card = this.createCard(name, email, date, message, avatar_url)
-     console.log(avatar_url)
-      this.container.appendChild(card.create());
+      addSliderCard(date, avatar_url, name, email, message) {
+        const card = this.createCard(date, avatar_url, name, email, message)
+        console.log(card)
+       //const card = this.createCard(commit.committer.date, author.avatar_url, commit.committer.name, commit.committer.email, commit.message)
+        this.container.appendChild(card.create());
     }
-    render(cards) {
-      cards.forEach(item => {
-    this.addSliderCard(item.commit.author.name, item.commit.author.email, item.commit.committer.date, item.commit.message, item.author.avatar_url)
-      })
+      render(cards) {
+        cards.forEach(item => {
+         this.addSliderCard(item.commit.committer.date, item.author.avatar_url, item.commit.committer.name, item.commit.committer.email, item.commit.message)
+        // console.log(item.commit.committer.date, item.author.avatar_url, item.commit.committer.name, item.commit.committer.email, item.commit.message)
+        })
     }  
 }

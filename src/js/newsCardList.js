@@ -1,5 +1,4 @@
 import {NUMBER_CARDS} from './index.js';
-import "./clients.js";
 
 export class NewsCardList {
     constructor(container, createCard) {

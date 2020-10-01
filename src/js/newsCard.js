@@ -33,6 +33,7 @@ export class NewsCard {
 
       const cardsDate = newCard.querySelector(".preloader__cards-date");
       cardsDate.textContent = this.publishedAt;
+      console.log(cardsDate.textContent = this.publishedAt)
       let data = new Date(this.publishedAt)
       cardsDate.textContent = data.getDate() + ' ' + MONTH_ARRAY[data.getMonth()] + ', ' + data.getFullYear()
       return newCard;  

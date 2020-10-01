@@ -2,11 +2,11 @@ const slider = document.querySelector('.swiper-container');
 
 let mySwiper = new Swiper(slider, {
    // init: false, //удалить
-   observer: true,
-   observeParents: true,
 	slidesPerView: 3,
 	spaceBetween: 10,
 	centeredSlides: true,
+	observer: true,
+   observeParents: true,
 	loop: true,
 	pagination: {
 		el: '.swiper-pagination',
@@ -17,4 +17,5 @@ let mySwiper = new Swiper(slider, {
 		prevEl: '.swiper-button-prev',
 	},
 })
+
 

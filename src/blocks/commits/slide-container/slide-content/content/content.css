@@ -2,7 +2,7 @@
 @import url(./content-main/content-main.css);
 @import url(./content-main-text/content-main-text.css);
 
-.content {
+.card__content {
 width: 400px;  
 height: 288px;  
 justify-content: center;

@@ -14,7 +14,6 @@ let currentCards = NUMBER_CARDS;
 
 
 import "../pages/index.css";
-//import "./validation.js"
 //import "./swiper.js";
 //import "./slider.js";
 //import "./clients.js";
@@ -107,28 +106,23 @@ function searchInput(input) {
 }
 
 /*------------input-----------*/
-
-
-function sendInput(e) {//input
+function val () {
+  if (input.value === '') {
+    buttonSearchNews.disabled = true;
+  }
+  else {
+    buttonSearchNews.disabled = false;
+  }
+}
  
 
-
+function sendInput(e) {//input
+  val ()
   preloader.style.display = "flex";
   e.preventDefault();
   newsCard.removeCards(); ///????///
   const localInput = input.value
-
   console.log(localInput)
-  val()
-  function val () {
-    if (localInput === '') {
-      buttonSearchNews.disabled = true;
-    }
-    else {
-      buttonSearchNews.disabled = false;
-    }
-  }
-   
   localStorage.setItem('input', localInput);
     getPreloader(true)
   searchInput(input.value)

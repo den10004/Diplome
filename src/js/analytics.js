@@ -1,4 +1,5 @@
-
+import {mainAnswer, newsAnswerweek, ans, columnDays, columnHistogram, month, data, answer} from './constants.js';
+import "../pages/index.css";
 mainAnswer.textContent = localStorage.getItem('input');  //вы спросили
 ans.textContent = localStorage.getItem('input'); //новости за неделю
 newsAnswerweek.textContent = data.totalResults;   //заголовок
@@ -25,6 +26,9 @@ month.textContent = mons[mon]
 
 function dates() {  //даты в таблице
    const dateObject = [];
+
+
+   console.log(dateObject)
   for (let i = 6; i>=0; i=i-1) {
     const day = new Date(new Date().getTime()-(i*86400000)).toLocaleDateString('ru', {day: 'numeric'});
     const week = new Date(new Date().getTime()-(i*86400000)).toLocaleDateString('ru', {weekday: 'short'});
@@ -46,7 +50,8 @@ function mentionsDay() {
 
   data.articles.forEach((article) => {
     const published = new Date(article.publishedAt.slice(0,10)).getDate();
-      if (published in days) {
+   // console.log(published)
+     if (published in days) {
       days[published]++;
     } else {
       days[published] = 1;
@@ -58,15 +63,14 @@ function mentionsDay() {
 
 function renderGraph(obj) {
 const arrayDays = Object.values(obj);
-  console.log(arrayDays)
+
   for(let i = 0; i < Object.values(obj).length; i++) {
     columnHistogram[i].insertAdjacentHTML('afterbegin', Object.values(obj)[i]);
     columnHistogram[i].style.width = `${Object.values(obj)[i]}%`;
+
   }
 }
 
 dates();
 mentionsDay();
 
-import {mainAnswer, newsAnswerweek, ans, columnDays, columnHistogram, month, data, answer} from './constants.js';
-import "../pages/index.css";

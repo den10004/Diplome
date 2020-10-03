@@ -23,7 +23,6 @@ export class SliderCard {
       template.insertAdjacentHTML('afterbegin', list);
       const newCard = template.firstElementChild;
       newCard.querySelector(".card-data").textContent = this._date;
-     /* newCard.querySelector(".card-photo").style.backgroundImage = `url(${this._avatar_url})`;*/
       newCard.querySelector(".card-photo").src = `${this._avatar_url}`;
       newCard.querySelector(".main-name").textContent = this._name;
       newCard.querySelector(".main-email").textContent = this._email;
@@ -38,5 +37,4 @@ export class SliderCard {
     }
 }
 
-      /*<div class="card-photo" style="background-image: url(https://avatars0.githubusercontent.com/u/67386666?v=4) alt="github-photo"></div>*/
-      /*  <img class="card-photo" src: 'https://avatars0.githubusercontent.com/u/67386666?v=4' alt="github-photo">*/
+  

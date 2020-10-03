@@ -5,7 +5,6 @@ export class SliderCardList {
     }
     addSliderCard(name, email, date, message, avatar_url) {
       const card = this.createCard(name, email, date, message, avatar_url)
-     console.log(avatar_url)
       this.container.appendChild(card.create());
     }
     render(cards) {

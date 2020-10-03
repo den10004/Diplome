@@ -34,12 +34,14 @@
         <h1 class="search__title">Что в мире творится?</h1>
         <p class="search__subtitle"> Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за
           прошедшую неделю</p>
+          <span class="error-message"></span>
         <form class="search__form" name="search">
           <input class="search__form-input" placeholder="введите ключевое слово" required>
-          <span id="validation" class="error"></span>
-            <button class="search__form-button" type="button">искать</button>
+          <button class="search__form-button" type="submit">искать</button>
         </form>
-        <!--div -> form-->
+       
+        
+       
       </section>
     </div>
 
@@ -58,6 +60,7 @@
           <img class="preloader__found-image" src="<%=require('./images/ellipce.svg')%>" alt="ellipce">
           <div class="preloader__found-nothing">Ничего не найдено </div>
           <div class="preloader__found-sorry">К сожалению по вашему запросу ничего не найдено.</div>
+          <p class="server__error">Произошла ошибка, сервер недоступен, попробуйте ещё раз</p>
         </div>
 
 

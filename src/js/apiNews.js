@@ -1,12 +1,12 @@
 export class ApiNews {
     constructor(configNews) {
-      this.url = configNews.url;
+      this._url = configNews.url;
       this.configNews = configNews;
       this.link = configNews.link;
     }
   
     addServerNews = () => {
-      return fetch(`${this.url}`, {
+      return fetch(`${this._url}`, {
       })
   
         .then(res => {
@@ -19,8 +19,8 @@ export class ApiNews {
     }
 
     
-    SendForm = () => {
-      return fetch(`${this.url}`, {
+    sendForm = () => {
+      return fetch(`${this._url}`, {
       })
   
         .then(res => {

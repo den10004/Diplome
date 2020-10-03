@@ -15,18 +15,29 @@
 
 
 body {
-  background-color: white;
-  /*max-width: 1440px;*/
-  /*margin: auto;*/
- 
+  background-color: white; 
 }
 
 
 
 .page {
   min-width: 320px;
-/*  max-width: 1440px;*/
-/*  margin: 0 auto;*/
-  
 }
 
+.server__error {
+  display: none;
+  color: #b6bcbf;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin: 5px auto 0;
+  width: 550px;
+  padding-bottom: 70px;
+}
+
+.error-message {
+  display: absolute;
+  font-size: 32px;
+  color:red;
+  
+}

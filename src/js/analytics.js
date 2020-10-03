@@ -1,23 +1,7 @@
-import { CARDS } from './constants.js';
-import "../pages/index.css";
-
-
-const mainAnswer = document.querySelector('.question__headline-main-answer');
-const newsAnswerweek = document.querySelector('.question__analysis-news-answerweek');
-const ans = document.querySelector('.question__analysis-news-answerweek_1');
-const mainAsk = document.querySelector('.question__headline-main-ask');
-const columnDays = document.querySelectorAll('.analytics__column-days');  //даты
-const columnHistogram = document.querySelectorAll('.analytics__column-histogram');
-const month = document.querySelector('.analytics__diagram-data');   //месяц
-const data = JSON.parse(localStorage.getItem(CARDS)); //JSON-массив
-
-const answer = localStorage.getItem('input'); 
-
 
 mainAnswer.textContent = localStorage.getItem('input');  //вы спросили
 ans.textContent = localStorage.getItem('input'); //новости за неделю
 newsAnswerweek.textContent = data.totalResults;   //заголовок
-
 ans.textContent = mentionForWeek(answer, data.articles);  //упонимание за неделю или data или answer
 
 function mentionForWeek(key, articles) { ////упонимание за неделю
@@ -57,15 +41,11 @@ function renderDates(dateObject) {   //рендер дат
 }
   
 //график////////////////////////////////////
-function mentionsPerDay() {
+function mentionsDay() {
   const days = {x:0, x:0, x:0, x:0, x:0, x:0, x:0}
-  //console.log(days)
-  
- 
+
   data.articles.forEach((article) => {
     const published = new Date(article.publishedAt.slice(0,10)).getDate();
-    //const arrayDays = Object.values(days);
-   //days.push(arrayDays)
       if (published in days) {
       days[published]++;
     } else {
@@ -80,15 +60,13 @@ function renderGraph(obj) {
 const arrayDays = Object.values(obj);
   console.log(arrayDays)
   for(let i = 0; i < Object.values(obj).length; i++) {
-  //for(let i = Object.values(obj).length -1; i >=0; i--) {
-    // for(let i = length-1; i >=0; i--) {
-    //const collunms = Object.values(obj)[i];
-    //const arrayDayss = Object.values(obj)[i]
     columnHistogram[i].insertAdjacentHTML('afterbegin', Object.values(obj)[i]);
-    //columnHistogram[i].textContent = Object.values(obj)[i];
     columnHistogram[i].style.width = `${Object.values(obj)[i]}%`;
   }
 }
 
 dates();
-mentionsPerDay();
+mentionsDay();
+
+import {mainAnswer, newsAnswerweek, ans, columnDays, columnHistogram, month, data, answer} from './constants.js';
+import "../pages/index.css";

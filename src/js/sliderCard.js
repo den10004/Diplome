@@ -14,7 +14,7 @@ export class SliderCard {
       const list = 
       `<div class="swiper-slide card">
       <div class="card-data"></div>
-      <div class="card-photo" style="background-image: url(https://avatars0.githubusercontent.com/u/67386666?v=4) alt="github-photo"></div>
+      <img class="card-photo" src= '' alt="github-photo">
       <div class="main-name"></div>
       <div class="main-email"></div>         
       <div class="content-text"></div>`;
@@ -23,7 +23,8 @@ export class SliderCard {
       template.insertAdjacentHTML('afterbegin', list);
       const newCard = template.firstElementChild;
       newCard.querySelector(".card-data").textContent = this._date;
-      newCard.querySelector(".card-photo").style.backgroundImage = `url(${this._avatar_url})`;
+     /* newCard.querySelector(".card-photo").style.backgroundImage = `url(${this._avatar_url})`;*/
+      newCard.querySelector(".card-photo").src = `${this._avatar_url}`;
       newCard.querySelector(".main-name").textContent = this._name;
       newCard.querySelector(".main-email").textContent = this._email;
       newCard.querySelector(".content-text").textContent = this._message;
@@ -36,3 +37,6 @@ export class SliderCard {
       return newCard;  
     }
 }
+
+      /*<div class="card-photo" style="background-image: url(https://avatars0.githubusercontent.com/u/67386666?v=4) alt="github-photo"></div>*/
+      /*  <img class="card-photo" src: 'https://avatars0.githubusercontent.com/u/67386666?v=4' alt="github-photo">*/

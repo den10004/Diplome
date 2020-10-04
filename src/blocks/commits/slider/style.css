@@ -1,0 +1,25 @@
+.swiper-button-prev,
+.swiper-button-next {
+	position: static;
+	margin-left: 10px;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+
+.swiper-slide {
+	opacity: 0.5;
+	transition: opacity 0.15s;
+}
+
+.swiper-slide-active,
+.swiper-slide-next,
+.swiper-slide-prev {
+	opacity: 1;
+	transition: opacity 0.15s;
+}
+.swiper-wrapper {
+max-height: 288px;
+}

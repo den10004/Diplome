@@ -1,41 +1,29 @@
 @import url(../preloader__cards/preloader__cards.css);
 
-.preloader__result_blocs {
-display: grid;
+.preloader__result-blocs {
+/*display: grid;*/
+display: none;
 justify-items: start;
 margin-top: 64px;
-grid-template-columns: 400px 1fr 400px;
-grid-template-rows: 576px 576px;
+grid-template-columns: 400px 400px 400px;
+grid-template-rows: 576px;
 grid-column-gap: 16px;
 grid-row-gap: 16px;
+
 }
 
 
 @media screen and (max-width: 1280px) {
-  .preloader__result_blocs {	
+  .preloader__result-blocs {	
     margin-top: 32px;	
-    grid-template-columns: 224px 1fr 224px;
+    grid-template-columns: 224px 224px 224px;
     grid-template-rows: 420px 420px;
   }
 }
-
-
-
-
-@media screen and (max-width: 1024px) {
-  .preloader__result_blocs {	
-    margin-top: 32px;	
-    grid-template-columns: 224px 1fr 224px;
-    grid-template-rows: 420px 420px;
-  }
-}
-
-
-
 
 
 @media screen and (max-width: 718px) {
-    .preloader__result_blocs {	
+    .preloader__result-blocs {	
       grid-template-columns: 288px;
       grid-template-rows: 446px 1fr 1fr 1fr 1fr 446px;
     }
@@ -43,7 +31,7 @@ grid-row-gap: 16px;
 
 
   @media screen and (max-width: 425px) {
-    .preloader__result_blocs {	
+    .preloader__result-blocs {	
         grid-template-columns: 288px;
         grid-template-rows: 446px 1fr 1fr 1fr 1fr 446px;
     }

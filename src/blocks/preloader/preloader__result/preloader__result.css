@@ -4,6 +4,7 @@
 
 
 .preloader__result {
+	/*display: none;*/
 	display: flex;	
 	flex-direction: column;
 	max-width: 100%;

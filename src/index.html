@@ -22,7 +22,7 @@
           <div class="header__menu">
             <a class="header__menu-main">Главная</a>
             <a class="header__menu-about" href="./clients.html">О проекте</a>
-            
+
           </div>
         </div>
         <hr id="header-menu-line" style="border: 1px solid white">
@@ -34,34 +34,38 @@
         <h1 class="search__title">Что в мире творится?</h1>
         <p class="search__subtitle"> Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за
           прошедшую неделю</p>
-        <div class="search__form">
-          <input class="search__form-input" pattern="[а-яё]{1,}" placeholder="введите ключевое слово" required>
-
-          <button class="search__form-button">искать</button>
-        </div>
+          <span class="error-message"></span>
+        <form class="search__form" name="search">
+          <input class="search__form-input" placeholder="введите ключевое слово" required>
+          <button class="search__form-button" type="submit">искать</button>
+        </form>
+       
+        
+       
       </section>
     </div>
 
     <section class="preloader">
-      <div class="preloader__search">
-        <div class="preloader__search-circle"></div>
-        <div class="preloader__search-news">Идёт поиск новостей... </div>
-      </div>
-
-      <div class="preloader__found">
-        <img class="preloader__found-image" src="<%=require('./images/ellipce.svg')%>" alt="ellipce">
-        <div class="preloader__found-nothing">Ничего не найдено </div>
-        <div class="preloader__found-sorry">К сожалению по вашему запросу ничего не найдено.</div>
-      </div>
-
-
       <div class="preloader__result">
         <div class="preloader__result-resultblocs">
           <div class="preloader__result-resultblocs-resultsearch"> Результаты поиска</div>
           <a class="preloader__result-resultblocs-analitics" href="./paper.html">Посмотреть аналитику ></a>
         </div>
+        <div class="preloader__search">
+          <div class="preloader__search-circle"></div>
+          <div class="preloader__search-news">Идёт поиск новостей... </div>
+        </div>
 
-        <div class="preloader__result_blocs">
+        <div class="preloader__found">
+          <img class="preloader__found-image" src="<%=require('./images/ellipce.svg')%>" alt="ellipce">
+          <div class="preloader__found-nothing">Ничего не найдено </div>
+          <div class="preloader__found-sorry">К сожалению по вашему запросу ничего не найдено.</div>
+          <p class="server__error">Произошла ошибка, сервер недоступен, попробуйте ещё раз</p>
+        </div>
+
+
+        <div class="preloader__result-blocs">
+          <!--      
           <div class="preloader__cards">
             <img class="preloader__cards-image" src="<%=require('./images/lenta.png')%>" alt="cards">
             <div class="preloader__cards-date">2 августа, 2019</div>
@@ -75,78 +79,13 @@
             <div class="preloader__cards-origin">Лента.ру</div>
           </div>
 
-          <div class="preloader__cards">
-            <img class="preloader__cards-image" src="<%=require('./images/meduza.png')%>" alt="cards">
-            <div class="preloader__cards-date">2 августа, 2019</div>
-            <div class="preloader__cards-content">
-              <h3 class="preloader__cards-content-header">Лесные огоньки: история одной фотографии</h3>
-              <div class="preloader__cards-content-text">Фотограф отвлеклась от освещения суровой политической
-                реальности Мексики, чтобы запечатлеть ускользающую красоту одного
-                из местных чудес природы.
-              </div>
-            </div>
-            <div class="preloader__cards-origin">Медуза</div>
-          </div>
-
-          <div class="preloader__cards">
-            <img class="preloader__cards-image" src="<%=require('./images/ria.png')%>" alt="cards">
-            <div class="preloader__cards-date">2 августа, 2019</div>
-            <div class="preloader__cards-content">
-              <h3 class="preloader__cards-content-header">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-              <div class="preloader__cards-content-text">Знаменитый фотограф снимает первозданные леса России, чтобы
-                рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...
-              </div>
-            </div>
-            <div class="preloader__cards-origin">Риа</div>
-          </div>
-
-
-          <div class="preloader__cards">
-            <img class="preloader__cards-image" src="<%=require('./images/dzen.png')%>" alt="cards">
-            <div class="preloader__cards-date">2 августа, 2019</div>
-            <div class="preloader__cards-content">
-              <h3 class="preloader__cards-content-header">Национальное достояние - парки</h3>
-              <div class="preloader__cards-content-text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-                начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может
-                приобщиться к природе.
-              </div>
-            </div>
-            <div class="preloader__cards-origin">Дзен</div>
-          </div>
-
-          <div class="preloader__cards">
-            <img class="preloader__cards-image" src="<%=require('./images/afisha.png')%>" alt="cards">
-            <div class="preloader__cards-date">2 августа, 2019</div>
-            <div class="preloader__cards-content">
-              <h3 class="preloader__cards-content-header">Лесные огоньки: история одной фотографии</h3>
-              <div class="preloader__cards-content-text">Фотограф отвлеклась от освещения суровой политической
-                реальности Мексики, чтобы запечатлеть ускользающую красоту одного
-                из местных чудес природы.
-              </div>
-            </div>
-            <div class="preloader__cards-origin">Афиша</div>
-          </div>
-
-          <div class="preloader__cards">
-            <img class="preloader__cards-image" src="<%=require('./images/mediazona.png')%>" alt="cards">
-            <div class="preloader__cards-date">2 августа, 2019</div>
-            <div class="preloader__cards-content">
-              <h3 class="preloader__cards-content-header">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-              <div class="preloader__cards-content-text">Знаменитый фотограф снимает первозданные леса России, чтобы
-                рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...
-              </div>
-            </div>
-            <div class="preloader__cards-origin">Медиазона</div>
-          </div>
-
+      
+-->
         </div>
         <button class="preloader__result_button">Показать ещё</button>
 
 
     </section>
-
-
-
 
     <section class="author">
       <div class="author__content">
@@ -174,8 +113,13 @@
           <a class="footer__copypro-copyright" href="https://vk.com/den10004">&copy&nbsp;2020&nbsp;Денис</a>
         </div>
         <ul class="footer__links">
-          <li><a class="footer__links-github" href="https://github.com/den10004?tab=repositories"><img src="<%=require('./images/github.png')%>" alt="github"></a></li>
-          <li><a class="footer__links-facebook" href="https://vk.com/den10004"><img src="<%=require('./images/facebook.png')%>" alt="facebook"></a>
+
+          <li><a class="footer__links-github" href="https://github.com/den10004?tab=repositories"><img
+                src="<%=require('./images/github.png')%>"></a></li>
+          <li><a class="footer__links-facebook" href="https://vk.com/den10004"><img
+                src="<%=require('./images/facebook.png')%>"></a>
+
+
           </li>
         </ul>
       </div>
@@ -187,6 +131,7 @@
 
 
   <script src=" <%= htmlWebpackPlugin.files.js %>"></script>
+
 
 
 </body>

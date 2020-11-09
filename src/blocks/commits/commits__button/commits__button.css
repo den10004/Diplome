@@ -11,7 +11,8 @@
 
 @media screen and (max-width: 425px) {
     .commits__button {	
-    padding-left: 70px;
+    display: none;
+    /*padding-left: 70px;
     border: 1px solid #D1D2D6;
     box-sizing: border-box;
     backdrop-filter: blur(8px);
@@ -28,14 +29,15 @@
     text-align: center;
     align-content: center;
     margin-top: 24px;
-    cursor: pointer;
+    cursor: pointer;*/
     }
 }
   
 
 @media screen and (max-width: 375px) {
     .commits__button {	
-    padding-left: 65px;
+        display: none;
+   /* padding-left: 65px;*/
     
     }
 }

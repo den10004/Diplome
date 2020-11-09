@@ -61,8 +61,8 @@ resultButton.addEventListener('click', () => { // "показать ещё"
   
 
 function searchInput(input) {
-  return fetch(`https://newsapi.org/v2/everything?language=ru&sortBy=publishedAt&pageSize=100&qInTitle=${input}&apiKey=10e8db0981ec4941becf1c27cd92454d`)
-
+ // return fetch(`https://newsapi.org/v2/everything?language=ru&sortBy=publishedAt&pageSize=100&qInTitle=${input}&apiKey=10e8db0981ec4941becf1c27cd92454d`)
+ return fetch(`https://nomoreparties.co/news/v2/everything?language=ru&sortBy=publishedAt&pageSize=100&qInTitle=${input}&apiKey=10e8db0981ec4941becf1c27cd92454d`)
 }
 
 /*------------input-----------*/

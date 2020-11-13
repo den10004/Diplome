@@ -35,6 +35,6 @@ CSS3, HTML5, Webpack, JS
 - Установить зависимости при помощи npm - `npm i`
 - Запустить в development режиме - `npm run dev`
 - Запустить сборку production-билда - `npm run build`
-- Разместить production-билд на github pages - `npm run deploy`
 
-
+## Инструкции по запуску (упрощённое):
+- Скачать папку dist и запустить файл index.html

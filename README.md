@@ -16,7 +16,7 @@
 также включены ссылки на личную страницу автора в социальной сети и репозиторий.
 
 ## Стэк технологий:
-CSS3, HTML5, Webpack, JS
+CSS3, HTML5, JS, Webpack
 
 ## Пакеты которые используются в сборках:
 - [Babel CLI](https://babeljs.io/docs/en/babel-cli#docsNav)

@@ -1,8 +1,5 @@
 # **Дипломная работа студента курса "Фронтенд-разработчик"**
-# Страница проекта размещена на Vercel
-[ссылка](https://diplome-vert.vercel.appv)
-
-
+# Страница проекта размещена на Vercel  [ссылка]([https://babeljs.io/docs/en/babel-cli#docsNav](https://diplome-vert.vercel.appv))
 Версия 0.1.26
 
 ## О проекте:
